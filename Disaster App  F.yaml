@@ -1,0 +1,1299 @@
+allow_embedding: false
+config:
+  client: {}
+  server: {}
+correct_dependency_ids: {}
+db_schema:
+  blood_reports:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: id
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: user_id
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      name: location
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      name: Blood_type
+      type: string
+    server: full
+    title: blood_reports
+  disasters:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 255}
+      name: disaster_id
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: location
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      name: reporter_id
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      name: reported_time
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      name: disaster
+      type: string
+    - admin_ui: {order: 5, width: 200}
+      name: severity
+      type: string
+    server: full
+    title: disasters
+  users:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 161}
+      name: token
+      type: string
+    - admin_ui: {order: 0.25, width: 200}
+      name: username
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      name: disablities
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      name: home_location
+      type: string
+    - admin_ui: {order: 0.5, width: 200}
+      name: password
+      type: string
+    - admin_ui: {order: 0.375, width: 200}
+      name: email
+      type: string
+    - admin_ui: {order: 1.625, width: 200}
+      name: birthday
+      type: string
+    - admin_ui: {order: 14, width: 200}
+      name: user_id
+      type: string
+    - admin_ui: {order: 8.5, width: 200}
+      name: exact_location
+      type: string
+    - admin_ui: {order: 15, width: 200}
+      name: is_admin
+      type: bool
+    - admin_ui: {order: 16, width: 200}
+      name: blood_group
+      type: string
+    - admin_ui: {order: 17, width: 200}
+      name: diseases
+      type: string
+    - admin_ui: {order: 18, width: 200}
+      name: allergies
+      type: string
+    - admin_ui: {order: 19, width: 200}
+      name: important_contacts
+      type: string
+    server: full
+    title: users
+dependencies: []
+dependency_code: {}
+dependency_ids: {}
+dependency_order: []
+exported_table_schema:
+- client: none
+  columns:
+    9OIxifpoa70=:
+      admin_ui: {order: 0, width: 161}
+      name: token
+      type: string
+    NDh9iUZ89W4=:
+      admin_ui: {order: 2, width: 200}
+      name: disablities
+      type: string
+    NMqRdfU2hK4=:
+      admin_ui: {order: 17, width: 200}
+      name: diseases
+      type: string
+    Pz8fGGflAA0=:
+      admin_ui: {order: 0.5, width: 200}
+      name: password
+      type: string
+    UqDXiOfQkao=:
+      admin_ui: {order: 0.25, width: 200}
+      name: username
+      type: string
+    VrxsDbsOQ_A=:
+      admin_ui: {order: 14, width: 200}
+      name: user_id
+      type: string
+    YOL8RV8S8p0=:
+      admin_ui: {order: 0.375, width: 200}
+      name: email
+      type: string
+    bx+5FA2_2GQ=:
+      admin_ui: {order: 3, width: 200}
+      name: home_location
+      type: string
+    cea1TLRP8Y0=:
+      admin_ui: {order: 19, width: 200}
+      name: important_contacts
+      type: string
+    dke7sdJJcDM=:
+      admin_ui: {order: 8.5, width: 200}
+      name: exact_location
+      type: string
+    ecC+E_oceXY=:
+      admin_ui: {order: 16, width: 200}
+      name: blood_group
+      type: string
+    k7yAo4AGGjw=:
+      admin_ui: {order: 1.625, width: 200}
+      name: birthday
+      type: string
+    nQvZla3Q6ww=:
+      admin_ui: {order: 18, width: 200}
+      name: allergies
+      type: string
+    tcrTGojXaao=:
+      admin_ui: {order: 15, width: 200}
+      name: is_admin
+      type: bool
+  id: 919267
+  name: users
+  python_name: users
+  server: full
+- client: none
+  columns:
+    DXyZwrJTZzk=:
+      admin_ui: {order: 0, width: 255}
+      name: disaster_id
+      type: string
+    NL6chGhSZik=:
+      admin_ui: {order: 3, width: 200}
+      name: reported_time
+      type: string
+    UI9AF_j0nOc=:
+      admin_ui: {order: 1, width: 200}
+      name: location
+      type: string
+    dJw2Poc+VlQ=:
+      admin_ui: {order: 5, width: 200}
+      name: severity
+      type: string
+    euwEIAklTBE=:
+      admin_ui: {order: 4, width: 200}
+      name: disaster
+      type: string
+    iBIUnLnOzsA=:
+      admin_ui: {order: 2, width: 200}
+      name: reporter_id
+      type: string
+  id: 919268
+  name: disasters
+  python_name: disasters
+  server: full
+- client: none
+  columns:
+    9fGwNLsErdA=:
+      admin_ui: {order: 0, width: 200}
+      name: id
+      type: string
+    Evgs5j4LjH0=:
+      admin_ui: {order: 1, width: 200}
+      name: user_id
+      type: string
+    SeUahXLBNMI=:
+      admin_ui: {order: 2, width: 200}
+      name: location
+      type: string
+    oF3J62DIOn0=:
+      admin_ui: {order: 3, width: 200}
+      name: Blood_type
+      type: string
+  id: 919575
+  name: blood_reports
+  python_name: blood_reports
+  server: full
+extra_files: {__init__.py: IwojIFRoaXMgcmVwb3NpdG9yeSBpcyBhbiBBbnZpbCBhcHAuIExlYXJuIG1vcmUgYXQgaHR0cHM6Ly9hbnZpbC53b3Jrcy8KIyBUbyBydW4gdGhlIHNlcnZlci1zaWRlIGNvZGUgb24geW91ciBvd24gbWFjaGluZSwgcnVuOgojIHBpcCBpbnN0YWxsIGFudmlsLXVwbGluawojIHB5dGhvbiAtbSBhbnZpbC5ydW5fYXBwX3ZpYV91cGxpbmsgWW91ckFwcFBhY2thZ2VOYW1lCgpfX3BhdGhfXyA9IFtfX3BhdGhfX1swXSArICIvc2VydmVyX2NvZGUiLCBfX3BhdGhfX1swXSArICIvY2xpZW50X2NvZGUiXQo=}
+forms:
+- class_name: Login
+  code: "from ._anvil_designer import LoginTemplate\nfrom anvil import *\nimport anvil.server\nimport anvil.users\nimport anvil.js\nimport anvil.tables as tables\nimport anvil.tables.query as q\nfrom anvil.tables import app_tables\n\n\nclass Login(LoginTemplate):\n  def __init__(self, **properties):\n\n    self.init_components(**properties)\n    token = anvil.js.window.localStorage.getItem(\"token\")\n    state, user = anvil.server.call('get_login_data', token)\n    if state:\n      open_form('dashboard')\n\n  def login_button_click(self, **event_args):\n    email = self.email_input.text\n    password = self.password_input.text\n    \n    if not email or not password:\n        alert(\"Please enter both email and password!\")\n        return\n    \n    success, message, token = anvil.server.call('login_user', email, password)\n    \n    if success:\n        alert(\"Login successful! Redirecting...\")\n        anvil.js.window.localStorage.setItem('token', token)\n        open_form('dashboard')\n    else:\n        alert(f\"Login failed: {message}\")\n"
+  components:
+  - layout_properties: {grid_position: 'GGOZKA,NOCGSW'}
+    name: label_email
+    properties: {text: '                                                                                    Email'}
+    type: Label
+  - layout_properties: {grid_position: 'GNQMPC,JYKFDU'}
+    name: spacer_1
+    properties: {height: 32}
+    type: Spacer
+  - layout_properties: {grid_position: 'GNQMPC,JIMSYS'}
+    name: email_input
+    properties: {placeholder: Email}
+    type: TextBox
+  - layout_properties: {grid_position: 'GNQMPC,OTVNBC'}
+    name: spacer_2
+    properties: {height: 32}
+    type: Spacer
+  - layout_properties: {grid_position: 'XQQGCH,YOVDIC'}
+    name: label_password
+    properties: {text: '                                                                                    Password'}
+    type: Label
+  - layout_properties: {grid_position: 'QUJOEA,OZMLYA'}
+    name: spacer_2_copy_2
+    properties: {height: 32}
+    type: Spacer
+  - layout_properties: {grid_position: 'QUJOEA,IRAWOG'}
+    name: password_input
+    properties: {hide_text: true, placeholder: Password}
+    type: TextBox
+  - layout_properties: {grid_position: 'QUJOEA,GEZWEB'}
+    name: spacer_2_copy
+    properties: {height: 32}
+    type: Spacer
+  - layout_properties: {grid_position: 'JNNWIB,OMJVCN'}
+    name: spacer_2_copy_4
+    properties: {height: 32}
+    type: Spacer
+  - event_bindings: {click: login_button_click}
+    layout_properties: {grid_position: 'JNNWIB,FGFTOO'}
+    name: login_button
+    properties: {background: 'theme:Secondary Container', foreground: 'theme:On Surface', text: Login}
+    type: Button
+  - layout_properties: {grid_position: 'JNNWIB,DRGILR'}
+    name: spacer_2_copy_3
+    properties: {height: 32}
+    type: Spacer
+  container: {type: ColumnPanel}
+  id: '1739552042258394941652096.8747'
+  is_package: true
+- class_name: Start
+  code: |
+    from ._anvil_designer import StartTemplate
+    from anvil import *
+    import anvil.server
+    import anvil.users
+    import anvil.tables as tables
+    import anvil.tables.query as q
+    from anvil.tables import app_tables
+
+
+    class Start(StartTemplate):
+      def __init__(self, **properties):
+        self.init_components(**properties)
+        token = anvil.js.window.localStorage.getItem("token")
+        state, user = anvil.server.call('get_login_data', token)
+        if state:
+          open_form('dashboard')
+
+      def login_redirect_click(self, **event_args):
+        open_form('Login')
+
+      def Sign_up_redirect_click(self, **event_args):
+        open_form('register')
+  components:
+  - layout_properties: {grid_position: 'KQVGJW,RRNMSB'}
+    name: spacer_1
+    properties: {height: 32}
+    type: Spacer
+  - layout_properties: {grid_position: 'KMTDGJ,DGXLEH'}
+    name: spacer_1_copy
+    properties: {height: 32}
+    type: Spacer
+  - layout_properties: {grid_position: 'COXACH,ZJFWSO'}
+    name: welcome_label
+    properties:
+      align: center
+      bold: true
+      font_size: 25
+      spacing:
+        margin: [73, null, 0, null]
+      text: |-
+        Welcome
+        to
+        Disasters app
+      underline: false
+    type: Label
+  - event_bindings: {click: login_redirect_click}
+    layout_properties: {grid_position: 'BUKQES,CYRDUU'}
+    name: login_redirect
+    properties: {background: 'theme:Secondary Container', foreground: 'theme:On Surface', text: Login}
+    type: Button
+  - event_bindings: {click: Sign_up_redirect_click}
+    layout_properties: {grid_position: 'VQHAGD,VWYCSN'}
+    name: Sign_up_redirect
+    properties: {align: center, background: 'theme:Secondary Container', foreground: 'theme:On Background', text: Signup}
+    type: Button
+  container: {type: ColumnPanel}
+  id: '1738855990901397186944828.9893'
+  is_package: true
+- class_name: dashboard
+  code: "from ._anvil_designer import dashboardTemplate\nfrom anvil import *\nimport anvil.users\nimport anvil.tables as tables\nimport anvil.tables.query as q\nfrom anvil.tables import app_tables\nimport anvil.server\nimport anvil.js\n\nfrom .ListDisasters import ListDisasters\nfrom .ReportDisaster import ReportDisaster\nfrom .EditUser import EditUser\nfrom .BloodReports import BloodReports\n\n\nclass dashboard(dashboardTemplate):\n  def __init__(self, **properties):\n    # Set Form properties and Data Bindings.\n    self.init_components(**properties)\n    locations = anvil.server.call('get_locations')\n    coordinates_map = {tuple(coords): name for name, coords in locations}\n    \n\n\n    token = anvil.js.window.localStorage.getItem(\"token\")\n    state, self.user = anvil.server.call('get_login_data', token)\n    if not state:\n      open_form('Start')\n    self.username_display.text = self.user['username']\n    self.location_label.text = coordinates_map.get(tuple(map(float, str(self.user['home_location']).split(\", \"))), \"404: Unknown Location\")\n    self.forms = {\n            \"ListDisasters\": ListDisasters,\n            \"ReportDisaster\": ReportDisaster,\n            \"EditProfile\": EditUser,\n            \"BloodReports\": BloodReports\n        }\n    self.load_form('ListDisasters')\n\n  def load_form(self, form_name):\n      if form_name in self.forms:\n          self.content_panel.clear()\n          form_instance = self.forms[form_name]()\n          self.content_panel.add_component(form_instance)\n    \n  def toogle_user_menue_button_click(self, **event_args):\n    self.user_menu_panel.visible = not self.user_menu_panel.visible\n\n  def logout_link_click(self, **event_args):\n    anvil.js.window.localStorage.setItem('token', 'None')\n    open_form('Start')\n\n  def report_disaster_button_click(self, **event_args):\n    self.load_form('ReportDisaster')\n\n  def link_user_profile_click(self, **event_args):\n    self.load_form('EditProfile')\n\n  def generate_qr_click(self, **event_args):\n    data = f\"\"\"Person Details:\n    Name: {self.user['username']}\n    DoB (YY-MM-DD): {self.user['birthday']}\n    Disabilities: {self.user['disablities']}\n    blood group: {self.user['blood_group']}\n    diseases: {self.user['diseases']}\n    allergies: {self.user['allergies']}\n    Emergency Contacts: {self.user['important_contacts']}\n    \"\"\"\n\n    # Call server function and get the QR code as a Media object\n    qr_media = anvil.server.call('generate_qr', data, f'Qr_{self.user[\"username\"]}')\n\n    # Provide download link to the user\n    #anvil.js.window.open(qr_media.url, \"_blank\")  # Opens in new tab\n\n    # Alternatively, use Anvil's built-in download function\n    anvil.download(qr_media)\n\n  def home_link_click(self, **event_args):\n    self.load_form('ListDisasters')\n\n  def blood_reports_link_click(self, **event_args):\n    self.load_form('BloodReports')\n"
+  components:
+  - components: []
+    layout_properties: {slot: default}
+    name: content_panel
+    properties: {col_widths: '{}'}
+    type: ColumnPanel
+  - layout_properties: {slot: title}
+    name: MAIN_TITLE
+    properties: {bold: true, text: Disasters}
+    type: Label
+  - components:
+    - components: []
+      event_bindings: {click: home_link_click}
+      layout_properties: {grid_position: 'QWEOOM,DAYTOP'}
+      name: home_link
+      properties: {align: center, text: Home}
+      type: Link
+    - event_bindings: {click: blood_reports_link_click}
+      layout_properties: {grid_position: 'NFPXUT,WXKEVB'}
+      name: blood_reports_link
+      properties: {align: center, text: Blood Reports}
+      type: Link
+    - event_bindings: {click: report_disaster_button_click}
+      layout_properties: {grid_position: 'YFNQSY,MSJKZZ'}
+      name: report_disaster_button
+      properties: {background: red, border: '', foreground: white, text: Report Disaster}
+      type: Button
+    - event_bindings: {click: generate_qr_click}
+      layout_properties: {grid_position: 'UFGAPR,FAJYKA'}
+      name: generate_qr
+      properties:
+        background: white
+        foreground: black
+        text: "Generate \nemergency Qr\n"
+      type: Button
+    layout_properties: {slot: left-nav}
+    name: Sidebar
+    properties: {}
+    type: ColumnPanel
+  - components:
+    - name: location_label
+      properties: {}
+      type: Label
+    - data_bindings:
+      - {code: 'self.item[''username'']', property: text, writeback: false}
+      name: username_display
+      properties: {}
+      type: Label
+    - components:
+      - event_bindings: {click: link_user_profile_click}
+        layout_properties: {grid_position: 'QXJCIM,MAZBSM'}
+        name: link_user_profile
+        properties: {text: Profile}
+        type: Link
+      - event_bindings: {click: logout_link_click}
+        layout_properties: {grid_position: 'ZVFOIK,FCHYYZ'}
+        name: logout_link
+        properties: {align: left, bold: true, foreground: red, text: Logout, visible: true}
+        type: Link
+      name: user_menu_panel
+      properties: {visible: false}
+      type: ColumnPanel
+    - components: []
+      data_bindings: []
+      event_bindings: {click: toogle_user_menue_button_click}
+      name: toogle_user_menue_button
+      properties: {icon: 'fa:user'}
+      type: Link
+    layout_properties: {slot: nav-right}
+    name: USER_REDIRECT
+    properties: {align: left}
+    type: FlowPanel
+  container:
+    properties: {html: '@theme:standard-page.html'}
+    type: HtmlTemplate
+  id: TPM4NQZSCRMTKS5R7LHLF4VKSTP2YOFH
+  is_package: true
+- class_name: dashboard.BloodReports
+  code: |
+    from ._anvil_designer import BloodReportsTemplate
+    from anvil import *
+    import anvil.server
+    import anvil.users
+    import anvil.tables as tables
+    import anvil.tables.query as q
+    from anvil.tables import app_tables
+
+
+    class BloodReports(BloodReportsTemplate):
+      def __init__(self, **properties):
+        self.init_components(**properties)
+        token = anvil.js.window.localStorage.getItem("token")
+        state, self.user = anvil.server.call("get_login_data", token)
+        if self.user["is_admin"]:
+          self.clear_reports.visible = True
+        self.refresh_blood_reports()
+
+      def refresh_blood_reports(self):
+        blood_reports = anvil.server.call("get_blood_reports")
+        self.repeating_panel_1.items = blood_reports
+
+      def clear_reports_click(self, **event_args):
+        anvil.server.call("delete_blood_report")
+        self.refresh_disaster_list()
+  components:
+  - event_bindings: {click: clear_reports_click}
+    layout_properties: {grid_position: 'ZBIYCL,TGSEQT'}
+    name: clear_reports
+    properties: {align: left, background: red, foreground: white, text: Clear All Reports, visible: false}
+    type: Button
+  - layout_properties: {grid_position: 'SGOHMO,NMTGRF'}
+    name: repeating_panel_1
+    properties: {item_template: dashboard.BloodReportsRow}
+    type: RepeatingPanel
+  container: {type: ColumnPanel}
+  id: '1740327778558755674149238.1525'
+  is_package: true
+- class_name: dashboard.BloodReportsRow
+  code: |
+    from ._anvil_designer import BloodReportsRowTemplate
+    from anvil import *
+    import anvil.users
+    import anvil.tables as tables
+    import anvil.tables.query as q
+    from anvil.tables import app_tables
+    import anvil.server
+
+
+    class BloodReportsRow(BloodReportsRowTemplate):
+      def __init__(self, **properties):
+        self.init_components(**properties)
+
+        token = anvil.js.window.localStorage.getItem("token")
+        state, self.user = anvil.server.call("get_login_data", token)
+
+        # Set data from ListDisasters
+        self.label_blood_type.text = f"Severity: {self.item.get('blood_type', 'Unknown')}"
+        self.lat, self.lon = map(float, self.item.get("location").strip().split(","))
+        self.report_id = self.item.get("id")
+        position = GoogleMap.LatLng(self.lat, self.lon)
+        print(self.item)
+
+        if self.user["is_admin"]:
+          self.delete_report.visible = True
+        if self.user["user_id"] == self.item.get("user_id"):
+          self.delete_report.visible = True
+
+        # Set background color based on severity
+        self.role = "card"
+        self.background = "#00c928"
+
+        self.location_map.center = position
+        self.location_map.zoom = 12
+        marker = GoogleMap.Marker(position=position)
+        self.location_map.add_component(marker)
+
+      def location_map_bounds_changed(self, **event_args):
+        """This method is called when the viewport bounds have changed."""
+        pass
+
+      def show_location_click(self, **event_args):
+        self.location_map.visible = not self.location_map.visible
+
+      def delete_report_click(self, **event_args):
+        success = anvil.server.call("delete_blood_report", self.report_id)
+        if success:
+          self.parent.items = [
+            item for item in self.parent.items if item.get("id") != self.report_id
+          ]
+          open_form("dashboard")
+  components:
+  - layout_properties: {grid_position: 'QJCEEA,XGKJLA JQRJCK,MRQRPQ'}
+    name: label_1
+    properties: {align: center, bold: true, foreground: black, text: 'Blood Type:'}
+    type: Label
+  - event_bindings: {click: show_location_click}
+    layout_properties: {grid_position: 'QJCEEA,XGKJLA HLXRWN,NHIFPC'}
+    name: show_location
+    properties: {align: left, background: white, foreground: black, text: Show Location}
+    type: Button
+  - layout_properties: {grid_position: 'QJCEEA,QOSUMJ HHXFKX,CVBHDG'}
+    name: label_blood_type
+    properties: {align: center, bold: true, foreground: black, text: label_severity}
+    type: Label
+  - event_bindings: {click: delete_report_click}
+    layout_properties: {grid_position: 'QJCEEA,QOSUMJ CYTJAG,EPJTEK'}
+    name: delete_report
+    properties: {align: right, background: red, foreground: white, icon: 'fa:trash', text: Remove, visible: false}
+    type: Button
+  - event_bindings: {bounds_changed: location_map_bounds_changed}
+    layout_properties: {grid_position: 'EDQDBT,VDRAVQ'}
+    name: location_map
+    properties: {clickable_icons: false, height: 404.5, visible: false}
+    type: GoogleMap
+  container: {type: ColumnPanel}
+  id: '1740327233622914533471453.536'
+  is_package: true
+- class_name: dashboard.DisasterRow
+  code: "from ._anvil_designer import DisasterRowTemplate\nfrom anvil import *\nimport anvil.server\n# Define colors based on severity\nseverity_colors = {\n    \"Severe\": \"#f10700\",   # Red\n    \"Moderate\": \"#f16600\", # Orange\n    \"Mild\": \"#f1af00\"      # Yellow\n}\n\nclass DisasterRow(DisasterRowTemplate):\n    def __init__(self, **properties):\n        self.init_components(**properties)\n\n        token = anvil.js.window.localStorage.getItem(\"token\")\n        state, self.user = anvil.server.call('get_login_data', token)\n\n        # Set data from ListDisasters\n        self.label_disaster.text = self.item.get(\"disaster_name\", \"Unknown Disaster\")\n        self.label_severity.text = f\"Severity: {self.item.get('severity', 'Unknown')}\"\n        self.label_timestamp.text = f\"Reported on: {self.item.get('reported_time', 'Unknown')}\"\n        self.lat, self.lon = map(float, self.item.get('location').strip().split(','))\n        self.disaster_id = self.item.get('disaster_id')\n        position = GoogleMap.LatLng(self.lat, self.lon)\n        print(self.item)\n\n        if self.user['is_admin']: self.delete_disaster.visible = True\n        if self.user['user_id'] == self.item.get('reporter_id'): self.delete_disaster.visible = True\n\n\n        # Set background color based on severity\n        severity = self.item.get(\"severity\", \"Mild\")\n        self.role = \"card\"\n        self.background = severity_colors.get(severity, \"#FFFFFF\")\n\n        self.location_map.center = position\n        self.location_map.zoom = 12\n        marker = GoogleMap.Marker(position=position)\n        self.location_map.add_component(marker)\n      \n    def location_map_bounds_changed(self, **event_args):\n      \"\"\"This method is called when the viewport bounds have changed.\"\"\"\n      pass\n\n    def show_location_click(self, **event_args):\n      self.location_map.visible = not self.location_map.visible\n\n    def delete_disaster_click(self, **event_args):\n      success = anvil.server.call('delete_disaster', self.disaster_id)\n      if success:\n          self.parent.items = [item for item in self.parent.items if item.get(\"id\") != self.disaster_id]\n          open_form('dashboard')\n\n"
+  components:
+  - layout_properties: {grid_position: 'QJCEEA,XGKJLA JQRJCK,MRQRPQ'}
+    name: label_disaster
+    properties: {align: center, bold: true, foreground: black}
+    type: Label
+  - event_bindings: {click: show_location_click}
+    layout_properties: {grid_position: 'QJCEEA,XGKJLA HLXRWN,NHIFPC'}
+    name: show_location
+    properties: {align: left, background: white, foreground: black, text: Show Location}
+    type: Button
+  - event_bindings: {click: delete_disaster_click}
+    layout_properties: {grid_position: 'QJCEEA,XGKJLA JZRQWZ,MWBELD'}
+    name: delete_disaster
+    properties: {align: left, background: red, foreground: white, icon: 'fa:trash', text: Remove, visible: false}
+    type: Button
+  - layout_properties: {grid_position: 'QJCEEA,QOSUMJ'}
+    name: label_severity
+    properties: {align: center, bold: true, foreground: black, text: label_severity}
+    type: Label
+  - layout_properties: {grid_position: 'QJCEEA,EPQWCE'}
+    name: label_timestamp
+    properties: {align: center, bold: true, foreground: black}
+    type: Label
+  - event_bindings: {bounds_changed: location_map_bounds_changed}
+    layout_properties: {grid_position: 'EDQDBT,VDRAVQ'}
+    name: location_map
+    properties: {clickable_icons: false, height: 404.5, visible: false}
+    type: GoogleMap
+  container: {type: ColumnPanel}
+  id: '1740159657111955344284838.8654'
+  is_package: true
+- class_name: dashboard.EditUser
+  code: "from ._anvil_designer import EditUserTemplate\nfrom anvil import *\nimport anvil.server\nimport anvil.tables.query as q\nimport base64\n\ndef text_to_base64(text: str) -> str:\n    encoded_bytes = base64.b64encode(text.encode('utf-8'))\n    return encoded_bytes.decode('utf-8')\n\ndef base64_to_text(base64_string: str) -> str:\n    decoded_bytes = base64.b64decode(base64_string)\n    return decoded_bytes.decode('utf-8')\n\nclass EditUser(EditUserTemplate):\n    def __init__(self, user_id=None, **properties):\n        self.init_components(**properties)\n        token = anvil.js.window.localStorage.getItem(\"token\")\n        state, self.user = anvil.server.call('get_login_data', token)\n        self.user_id = self.user['user_id']\n        \n        self.home_select_box.items = anvil.server.call('get_locations')\n        self.blood_group_selecton.items = [\n            \"A+\", \"A-\", \"B+\", \"B-\", \"AB+\", \"AB-\", \"O+\", \"O-\",  # Common ABO groups\n            \"Bombay Blood Group (hh)\",  # Extremely rare\n            \"Rh-null\",  # Golden Blood (very rare)\n            \"Duffy-negative\",  # Common in certain populations\n            \"Kell-positive (K+)\", \"Kell-negative (K-)\",  # Kell blood system\n            \"Diego-positive\",  # Rare, mostly in Indigenous American & East Asian populations\n            \"Lutheran B-negative\",  # Very rare\n            \"MNS system variants\",  # Rare antigenic variations\n            \"Junior blood group\",  # Rare in certain populations\n            \"Langereis blood group\"  # Rare\n        ]\n        \n        self.lat = 0\n        self.lon = 0\n        self.load_user_data()\n\n    def load_user_data(self):\n        if not self.user_id:\n            alert(\"No user ID provided.\")\n            return\n        \n        if not self.user:\n            alert(\"User not found.\")\n            return\n\n        full_name = self.user['username']  # Assuming the name is stored as one string\n        name_parts = full_name.split()  # Split by spaces\n\n        # Assign first, middle, and last names dynamically\n        self.first_name_input.text = name_parts[0] if len(name_parts) > 0 else ''\n        self.middle_name_input.text = name_parts[1] if len(name_parts) > 2 else ''\n        self.last_name_input.text = name_parts[-1] if len(name_parts) > 1 else ''\n      \n        self.email_input.text = self.user['email']\n        self.date_picker_1.date = self.user['birthday']\n        self.disablities_input.text = self.user['disablities']\n        self.blood_group_selecton.selected_value = self.user['blood_group']\n        self.allergies_input.text = self.user['allergies']\n        self.diseases_input.text = self.user['diseases']\n        self.contact_input.text = self.user['important_contacts']\n        \n        location = self.user['home_location']\n        self.lat, self.lon = map(float, location.split(','))\n\n    def Submit_click(self, **event_args):\n      username = f'{self.first_name_input.text} ' + (f'{self.middle_name_input.text} ' if self.middle_name_input.text else '') + self.last_name_input.text\n      updated_data = {\n            \"user_id\": self.user_id,\n            \"username\": username,\n            \"email\": self.email_input.text,\n            \"birthday\": str(self.date_picker_1.date),\n            \"disabilities\": self.disablities_input.text,\n            \"blood_group\": self.blood_group_selecton.selected_value,\n            \"allergies\": self.allergies_input.text,\n            \"diseases\": self.diseases_input.text,\n            \"contacts\": self.contact_input.text,\n            \"home\": f\"{self.lat}, {self.lon}\"\n        }\n        \n      success, message = anvil.server.call('update_user', updated_data)\n      \n      if success:\n          alert(\"User information updated successfully!\")\n          open_form('dashboard')\n      else:\n          alert(f\"Error: {message}\")\n"
+  components:
+  - layout_properties: {grid_position: 'CIMDXN,VYQKRS'}
+    name: label_disabilities
+    properties: {text: Enter your full name}
+    type: Label
+  - layout_properties: {full_width_row: false, grid_position: 'VDQYNO,URRNTO', row_background: ''}
+    name: first_name_input
+    properties:
+      align: left
+      bold: false
+      border: ''
+      enabled: true
+      foreground: ''
+      hide_text: false
+      margin: [null, 0, null, null]
+      placeholder: First name
+      role: null
+      text: ''
+      visible: true
+    type: TextBox
+  - layout_properties: {grid_position: 'VDQYNO,IYKTCM'}
+    name: middle_name_input
+    properties: {placeholder: Middle name}
+    type: TextBox
+  - layout_properties: {grid_position: 'VDQYNO,HXVOXX'}
+    name: last_name_input
+    properties: {placeholder: Last name, text: ''}
+    type: TextBox
+  - layout_properties: {grid_position: 'CUXXRN,LGMXIF'}
+    name: email_label
+    properties: {text: Enter your email}
+    type: Label
+  - layout_properties: {grid_position: 'TCYNPA,XDEQGQ'}
+    name: email_input
+    properties: {placeholder: Email}
+    type: TextBox
+  - layout_properties: {grid_position: 'IOYPSZ,ZDSAWD'}
+    name: password_label
+    properties: {text: Password}
+    type: Label
+  - layout_properties: {grid_position: 'HLNNPQ,TKNCSA'}
+    name: password_input
+    properties: {hide_text: true, placeholder: password}
+    type: TextBox
+  - layout_properties: {grid_position: 'HLNNPQ,MEYLTD'}
+    name: confirm_password
+    properties: {hide_text: true, placeholder: confirm password}
+    type: TextBox
+  - layout_properties: {grid_position: 'RABAWV,JCYARA'}
+    name: label_birthday
+    properties: {text: Enter your birthday}
+    type: Label
+  - event_bindings: {change: date_picker_1_change}
+    layout_properties: {grid_position: 'IFQJQC,NCCJAT', row_background: ''}
+    name: date_picker_1
+    properties: {background: '', foreground: '', pick_time: false}
+    type: DatePicker
+  - layout_properties: {grid_position: 'CBTQOS,UXIOCN'}
+    name: label_disablities
+    properties: {text: Please enter any disabilities/health issues you may have}
+    type: Label
+  - layout_properties: {grid_position: 'XTUVUA,EZROGP'}
+    name: disablities_input
+    properties: {height: 69.6666259765625}
+    type: TextArea
+  - layout_properties: {grid_position: 'WTANFY,ZZQTOB'}
+    name: label_location
+    properties: {text: Select your home location}
+    type: Label
+  - event_bindings: {change: home_select_box_change}
+    layout_properties: {grid_position: 'PAKYSN,TDCNBU'}
+    name: home_select_box
+    properties: {}
+    type: DropDown
+  - layout_properties: {grid_position: 'OWPJLV,WUZAMS'}
+    name: label_1
+    properties: {text: What is your blood group}
+    type: Label
+  - layout_properties: {grid_position: 'FHGNWZ,NFIOVG'}
+    name: blood_group_selecton
+    properties: {}
+    type: DropDown
+  - layout_properties: {grid_position: 'BRHIIL,XEVFTL'}
+    name: label_2
+    properties: {text: What are your allergies (leave blank if none)}
+    type: Label
+  - layout_properties: {grid_position: 'KPXMHV,IMKPBJ'}
+    name: allergies_input
+    properties: {height: 73}
+    type: TextArea
+  - layout_properties: {grid_position: 'TZWUKC,SDNSMV'}
+    name: label_3
+    properties: {text: Enter any permanent diseases you may have}
+    type: Label
+  - layout_properties: {grid_position: 'XFTHCH,PIALHB'}
+    name: diseases_input
+    properties: {}
+    type: TextArea
+  - layout_properties: {grid_position: 'BFJCZQ,NGATDG'}
+    name: label_4
+    properties: {text: 'Enter important contact information (family, personal doctor etc)'}
+    type: Label
+  - layout_properties: {grid_position: 'YIIAST,ZLEJTJ'}
+    name: contact_input
+    properties: {}
+    type: TextArea
+  - event_bindings: {click: Submit_click}
+    layout_properties: {grid_position: 'CYSJLF,KZTPVE'}
+    name: save_changes
+    properties: {align: right, background: 'theme:Secondary Container', foreground: 'theme:On Surface', text: Submit}
+    type: Button
+  container:
+    properties:
+      background: ''
+      spacing:
+        margin: [0, 0, 0, null]
+        padding: [null, 0, null, 0]
+      visible: true
+    type: ColumnPanel
+  id: '1740304558918897969198751.3206'
+  is_package: true
+- class_name: dashboard.ListDisasters
+  code: |+
+    from ._anvil_designer import ListDisastersTemplate
+    from anvil import *
+    import anvil.server
+    import anvil.users
+    import anvil.tables as tables
+    import anvil.tables.query as q
+    from anvil.tables import app_tables
+
+
+    class ListDisasters(ListDisastersTemplate):
+        def __init__(self, **properties):
+            self.init_components(**properties)
+            token = anvil.js.window.localStorage.getItem("token")
+            state, self.user = anvil.server.call('get_login_data', token)
+            if self.user['is_admin']: self.clear_disasters.visible = True
+            self.refresh_disaster_list()
+
+        def refresh_disaster_list(self):
+            disasters = anvil.server.call('get_disasters')
+            self.repeating_panel_1.items = disasters
+
+        def clear_disasters_click(self, **event_args):
+          anvil.server.call('delete_disaster')
+          self.refresh_disaster_list()
+
+
+  components:
+  - event_bindings: {click: clear_disasters_click}
+    layout_properties: {grid_position: 'ZBIYCL,TGSEQT'}
+    name: clear_disasters
+    properties: {align: left, background: red, foreground: white, text: Clear All Disasters, visible: false}
+    type: Button
+  - layout_properties: {grid_position: 'SGOHMO,NMTGRF'}
+    name: repeating_panel_1
+    properties: {item_template: dashboard.DisasterRow}
+    type: RepeatingPanel
+  container: {type: ColumnPanel}
+  id: '1740154938440195338378966.10184'
+  is_package: true
+- class_name: dashboard.ListDisasters.ItemTemplate1
+  code: |
+    from ._anvil_designer import ItemTemplate1Template
+    from anvil import *
+    import anvil.server
+    import anvil.users
+    import anvil.tables as tables
+    import anvil.tables.query as q
+    from anvil.tables import app_tables
+
+
+    class ItemTemplate1(ItemTemplate1Template):
+      def __init__(self, **properties):
+        # Set Form properties and Data Bindings.
+        self.init_components(**properties)
+
+        # Any code you write here will run before the form opens.
+  components: []
+  container: {type: ColumnPanel}
+  id: '1740156116327492081761443.99805'
+  is_package: true
+- class_name: dashboard.ReportDisaster
+  code: "from ._anvil_designer import ReportDisasterTemplate\nfrom anvil import *\nimport anvil.server\nimport anvil.users\nimport anvil.tables as tables\nimport anvil.tables.query as q\nfrom anvil.tables import app_tables\nnatural_disasters = {\n    \"Severe\": [\n        \"Earthquake\", \"Tsunami\", \"Hurricane\", \"Volcanic Eruption\",\n        \"Major Flood\", \"Cyclone\", \"Typhoon\", \"Wildfire\"\n    ],\n    \"Moderate\": [\n        \"Tornado\", \"Landslide\", \"Blizzard\", \"Heatwave\",\n        \"Cold Wave\", \"Drought\"\n    ],\n    \"Mild\": [\n        \"Hailstorm\", \"Dust Storm\", \"Lightning Strike\", \"Sinkhole\"\n    ]\n}\n\nall_disasters = sum(natural_disasters.values(), [])\n\n\nclass ReportDisaster(ReportDisasterTemplate):\n  def __init__(self, **properties):\n    # Set Form properties and Data Bindings.\n    self.init_components(**properties)\n    self.drop_down_severity.items = [(\"All\", \"All\")] + [(key, key) for key in natural_disasters.keys()]\n    self.drop_down_disaster.items = [(d, d) for d in all_disasters]\n    self.lat = 0\n    self.lon = 0\n  \n    # Any code you write here will run before the form opens.\n    token = anvil.js.window.localStorage.getItem(\"token\")\n    state, self.user = anvil.server.call('get_login_data', token)\n    if not state:\n      open_form('Start')\n\n\n    geolocation = anvil.js.window.navigator.geolocation\n    print(geolocation)\n  \n    if geolocation:\n        geolocation.getCurrentPosition(self.location_success, self.location_error)\n    else:\n        alert(\"Geolocation is not supported by your browser.\")\n\n  def drop_down_severity_change(self, **event_args):\n    selected_severity = self.drop_down_severity.selected_value\n        \n    if selected_severity == \"All\" or not selected_severity:\n        # Show all disasters if \"All\" is selected\n        self.drop_down_disaster.items = [(d, d) for d in all_disasters]\n    else:\n        # Filter disasters by severity\n        self.drop_down_disaster.items = [(d, d) for d in natural_disasters[selected_severity]]\n    \n    # Reset the disaster selection\n    self.drop_down_disaster.selected_value = None\n\n\n  def location_success(self, position):\n        \"\"\"Callback when location is retrieved successfully\"\"\"\n        self.lat = position.coords.latitude\n        self.lon = position.coords.longitude\n        #alert(f\"Your Location:\\nLatitude: {lat}\\nLongitude: {lon}\")\n\n  def location_error(self, error):\n      \"\"\"Callback when location retrieval fails\"\"\"\n      alert(f\"Error getting location: {error.message}\")\n\n  def drop_down_disaster_change(self, **event_args):\n    selected_disaster = self.drop_down_disaster.selected_value\n    self.label_1.text = f\"Selected Disaster: {selected_disaster}\" if selected_disaster else \"Select a disaster\"\n\n  def button_submit_click(self, **event_args):\n    selected_disaster = self.drop_down_disaster.selected_value\n    selected_severity = self.drop_down_severity.selected_value\n\n    if selected_severity == \"All\":\n        for severity, disasters in natural_disasters.items():\n            if selected_disaster in disasters:\n                selected_severity = severity\n                break\n\n    anvil.server.call('report_disaster', self.user, selected_disaster, selected_severity, self.lat, self.lon)\n    alert('Disaster reported successfully')"
+  components:
+  - layout_properties: {grid_position: 'BCYVPC,FITQDN'}
+    name: report_label
+    properties: {align: center, bold: true, font_size: 30, text: Report Disaster}
+    type: Label
+  - layout_properties: {grid_position: 'DEEGYE,FKXTAV'}
+    name: spacer_1
+    properties: {height: 32}
+    type: Spacer
+  - layout_properties: {grid_position: 'DEEGYE,QFUHBX BVSEKN,QXDVZN'}
+    name: label_1
+    properties: {text: Disaster severity}
+    type: Label
+  - event_bindings: {change: drop_down_severity_change}
+    layout_properties: {grid_position: 'DEEGYE,QFUHBX GXXAJP,TAYORU'}
+    name: drop_down_severity
+    properties: {align: full, enabled: true}
+    type: DropDown
+  - layout_properties: {grid_position: 'DEEGYE,QFUHBX UNZIBU,JISZJE'}
+    name: label_1_copy
+    properties: {text: Disaster Type}
+    type: Label
+  - event_bindings: {change: drop_down_disaster_change}
+    layout_properties: {grid_position: 'DEEGYE,QFUHBX OBDRYR,LNUTJH'}
+    name: drop_down_disaster
+    properties: {}
+    type: DropDown
+  - event_bindings: {click: button_submit_click}
+    layout_properties: {grid_position: 'DEEGYE,QFUHBX XXPTMF,VUONEL'}
+    name: button_submit
+    properties: {align: center, background: red, foreground: white, text: Submit}
+    type: Button
+  - layout_properties: {grid_position: 'DEEGYE,LFUCZY'}
+    name: spacer_2
+    properties: {height: 32}
+    type: Spacer
+  container: {type: ColumnPanel}
+  id: '1740150315681408366819749.84467'
+  is_package: true
+- class_name: register
+  code: "from ._anvil_designer import registerTemplate\nfrom anvil import *\nimport anvil.server\nimport anvil.users\nimport anvil.tables as tables\nimport anvil.tables.query as q\nfrom anvil.tables import app_tables\nimport base64\n\n\ndef text_to_base64(text: str) -> str:\n    encoded_bytes = base64.b64encode(text.encode('utf-8'))\n    return encoded_bytes.decode('utf-8')\n\ndef base64_to_text(base64_string: str) -> str:\n    decoded_bytes = base64.b64decode(base64_string)\n    return decoded_bytes.decode('utf-8')\n\n\nclass register(registerTemplate):\n  global lat, lon\n  def __init__(self, **properties):\n    # Set Form properties and Data Bindings.\n    self.init_components(**properties)\n    self.home_select_box.items = anvil.server.call('get_locations')\n    self.blood_group_selecton.items = [\n    \"A+\", \"A-\", \"B+\", \"B-\", \"AB+\", \"AB-\", \"O+\", \"O-\",  # Common ABO groups\n    \"Bombay Blood Group (hh)\",  # Extremely rare\n    \"Rh-null\",  # Golden Blood (very rare)\n    \"Duffy-negative\",  # Common in certain populations\n    \"Kell-positive (K+)\", \"Kell-negative (K-)\",  # Kell blood system\n    \"Diego-positive\",  # Rare, mostly in Indigenous American & East Asian populations\n    \"Lutheran B-negative\",  # Very rare\n    \"MNS system variants\",  # Rare antigenic variations\n    \"Junior blood group\",  # Rare in certain populations\n    \"Langereis blood group\"  # Rare\n]\n\n    self.lat = 0\n    self.lon = 0\n\n    token = anvil.js.window.localStorage.getItem(\"token\")\n    state, user = anvil.server.call('get_login_data', token)\n    if state:\n      open_form('dashboard')\n\n    geolocation = anvil.js.window.navigator.geolocation\n  \n    if geolocation:\n        geolocation.getCurrentPosition(self.location_success, self.location_error)\n    else:\n        alert(\"Geolocation is not supported by your browser.\")\n\n\n  def location_success(self, position):\n        \"\"\"Callback when location is retrieved successfully\"\"\"\n        self.lat_exact = position.coords.latitude\n        self.lon_exact = position.coords.longitude\n        #alert(f\"Your Location:\\nLatitude: {lat}\\nLongitude: {lon}\")\n\n  def location_error(self, error):\n      \"\"\"Callback when location retrieval fails\"\"\"\n      alert(f\"Error getting location: {error.message}\")\n\n  def Submit_click(self, **event_args):\n    firstname = self.first_name_input.text\n    middle_name = self.middle_name_input.text\n    lastname = self.last_name_input.text\n    email = self.email_input.text\n    password=self.password_input.text\n    confirm_password=self.confirm_password.text\n    birthday = self.date_picker_1.date\n    disabilties = self.disablities_input.text\n    home = f'{lat}, {lon}'\n    exact_location = f'{self.lat_exact}, {self.lon_exact}'\n    blood_group = self.blood_group_selecton.selected_value\n    allergies = self.allergies_input.text\n    diseases = self.diseases_input.text\n    contacts = self.contact_input.text\n\n    if not firstname or not lastname or not email or not password or not confirm_password or not birthday:\n            alert(\"Please fill in all fields!\")\n            return\n    username = f'{firstname} ' + (f'{middle_name} ' if middle_name else '') + lastname\n    if password != confirm_password:\n            alert(\"Passwords do not match! Please try again\")\n            return\n    success, message = anvil.server.call('register_user', \n                                         username, \n                                         email, \n                                         password, \n                                         birthday, \n                                         disabilties, \n                                         home, \n                                         exact_location, \n                                         blood_group, \n                                         allergies,\n                                         diseases,\n                                         contacts)\n\n\n    if success:\n        alert(\"Registration successful! You can now log in.\")\n        open_form('Login')\n    else:\n        alert(f\"Error: {message}\")\n\n  def home_select_box_change(self, **event_args):\n    global lat, lon\n    selected_data = self.home_select_box.selected_value\n    \n    if selected_data:\n        lat, lon = selected_data\n        self.lat = str(lat)\n        self.lon = str(lon)\n\n\n"
+  components:
+  - layout_properties: {grid_position: 'CIMDXN,VYQKRS'}
+    name: label_disabilities
+    properties: {text: Enter your full name}
+    type: Label
+  - layout_properties: {full_width_row: false, grid_position: 'VDQYNO,URRNTO', row_background: ''}
+    name: first_name_input
+    properties:
+      align: left
+      bold: false
+      border: ''
+      enabled: true
+      foreground: ''
+      hide_text: false
+      margin: [null, 0, null, null]
+      placeholder: First name
+      role: null
+      text: ''
+      visible: true
+    type: TextBox
+  - layout_properties: {grid_position: 'VDQYNO,IYKTCM'}
+    name: middle_name_input
+    properties: {placeholder: Middle name}
+    type: TextBox
+  - layout_properties: {grid_position: 'VDQYNO,HXVOXX'}
+    name: last_name_input
+    properties: {placeholder: Last name, text: ''}
+    type: TextBox
+  - layout_properties: {grid_position: 'CUXXRN,LGMXIF'}
+    name: email_label
+    properties: {text: Enter your email}
+    type: Label
+  - layout_properties: {grid_position: 'TCYNPA,XDEQGQ'}
+    name: email_input
+    properties: {placeholder: Email}
+    type: TextBox
+  - layout_properties: {grid_position: 'IOYPSZ,ZDSAWD'}
+    name: password_label
+    properties: {text: Password}
+    type: Label
+  - layout_properties: {grid_position: 'HLNNPQ,TKNCSA'}
+    name: password_input
+    properties: {hide_text: true, placeholder: password}
+    type: TextBox
+  - layout_properties: {grid_position: 'HLNNPQ,MEYLTD'}
+    name: confirm_password
+    properties: {hide_text: true, placeholder: confirm password}
+    type: TextBox
+  - layout_properties: {grid_position: 'RABAWV,JCYARA'}
+    name: label_birthday
+    properties: {text: Enter your birthday}
+    type: Label
+  - event_bindings: {change: date_picker_1_change}
+    layout_properties: {grid_position: 'IFQJQC,NCCJAT', row_background: ''}
+    name: date_picker_1
+    properties: {background: '', foreground: '', pick_time: false}
+    type: DatePicker
+  - layout_properties: {grid_position: 'CBTQOS,UXIOCN'}
+    name: label_disablities
+    properties: {text: Please enter any disabilities/health issues you may have}
+    type: Label
+  - layout_properties: {grid_position: 'XTUVUA,EZROGP'}
+    name: disablities_input
+    properties: {height: 69.6666259765625}
+    type: TextArea
+  - layout_properties: {grid_position: 'WTANFY,ZZQTOB'}
+    name: label_location
+    properties: {text: Select your home location}
+    type: Label
+  - event_bindings: {change: home_select_box_change}
+    layout_properties: {grid_position: 'PAKYSN,TDCNBU'}
+    name: home_select_box
+    properties: {}
+    type: DropDown
+  - layout_properties: {grid_position: 'OWPJLV,WUZAMS'}
+    name: label_1
+    properties: {text: What is your blood group}
+    type: Label
+  - layout_properties: {grid_position: 'FHGNWZ,NFIOVG'}
+    name: blood_group_selecton
+    properties: {}
+    type: DropDown
+  - layout_properties: {grid_position: 'BRHIIL,XEVFTL'}
+    name: label_2
+    properties: {text: What are your allergies (leave blank if none)}
+    type: Label
+  - layout_properties: {grid_position: 'KPXMHV,IMKPBJ'}
+    name: allergies_input
+    properties: {height: 73}
+    type: TextArea
+  - layout_properties: {grid_position: 'TZWUKC,SDNSMV'}
+    name: label_3
+    properties: {text: Enter any permanent diseases you may have}
+    type: Label
+  - layout_properties: {grid_position: 'XFTHCH,PIALHB'}
+    name: diseases_input
+    properties: {}
+    type: TextArea
+  - layout_properties: {grid_position: 'BFJCZQ,NGATDG'}
+    name: label_4
+    properties: {text: 'Enter important contact information (family, personal doctor etc)'}
+    type: Label
+  - layout_properties: {grid_position: 'YIIAST,ZLEJTJ'}
+    name: contact_input
+    properties: {}
+    type: TextArea
+  - event_bindings: {click: Submit_click}
+    layout_properties: {grid_position: 'CYSJLF,KZTPVE'}
+    name: Submit
+    properties: {align: right, background: 'theme:Secondary Container', foreground: 'theme:On Surface', text: Submit}
+    type: Button
+  container:
+    properties:
+      background: ''
+      spacing:
+        margin: [0, 0, 0, null]
+        padding: [null, 0, null, 0]
+      visible: true
+    type: ColumnPanel
+  id: '1738853847684943661764255.0734'
+  is_package: true
+metadata: {logo_img: null}
+modules: []
+name: Disaster App - F
+package_name: Disasters
+renamed: true
+runtime_options:
+  client_version: '3'
+  server_spec:
+    base: python310-minimal
+    requirements: |
+      qrcode[pil]
+      pillow
+      opencv-python
+  server_spec_disabled:
+    base: python310-minimal
+    requirements: |-
+      qrcode
+      opencv-python
+      pillow
+  server_version: python3-sandbox
+  version: 2
+scripts: []
+server_modules:
+- code: "import anvil.server\nimport anvil.tables\nimport anvil.js\nimport datetime\nfrom anvil.tables import app_tables\nimport hashlib\nimport uuid\nimport random\nimport re\nimport base64\nimport string\nimport time\nimport qrcode\nfrom PIL import Image\nfrom io import BytesIO\n\nlocations = [\n    ('India, Andhra Pradesh, Visakhapatnam', (17.6868, 83.2185)),\n    ('India, Arunachal Pradesh, Itanagar', (27.0844, 93.6053)),\n    ('India, Assam, Guwahati', (26.1445, 91.7362)),\n    ('India, Bihar, Patna', (25.5941, 85.1376)),\n    ('India, Chhattisgarh, Raipur', (21.2514, 81.6296)),\n    ('India, Goa, Panaji', (15.4909, 73.8278)),\n    ('India, Gujarat, Ahmedabad', (23.0225, 72.5714)),\n    ('India, Haryana, Chandigarh', (30.7333, 76.7794)),\n    ('India, Himachal Pradesh, Shimla', (31.1048, 77.1734)),\n    ('India, Jharkhand, Ranchi', (23.3441, 85.3096)),\n    ('India, Karnataka, Bengaluru', (12.9716, 77.5946)),\n    ('India, Kerala, Thiruvananthapuram', (8.5241, 76.9366)),\n    ('India, Madhya Pradesh, Bhopal', (23.2599, 77.4126)),\n    ('India, Maharashtra, Mumbai', (19.0760, 72.8777)),\n    ('India, Manipur, Imphal', (24.8170, 93.9368)),\n    ('India, Meghalaya, Shillong', (25.5788, 91.8933)),\n    ('India, Mizoram, Aizawl', (23.7271, 92.7176)),\n    ('India, Nagaland, Kohima', (25.6751, 94.1086)),\n    ('India, Odisha, Bhubaneswar', (20.2961, 85.8245)),\n    ('India, Punjab, Amritsar', (31.6340, 74.8723)),\n    ('India, Rajasthan, Jaipur', (26.9124, 75.7873)),\n    ('India, Sikkim, Gangtok', (27.3314, 88.6138)),\n    ('India, Tamil Nadu, Chennai', (13.0827, 80.2707)),\n    ('India, Telangana, Hyderabad', (17.3850, 78.4867)),\n    ('India, Tripura, Agartala', (23.8315, 91.2868)),\n    ('India, Uttar Pradesh, Lucknow', (26.8467, 80.9462)),\n    ('India, Uttarakhand, Dehradun', (30.3165, 78.0322)),\n    ('India, West Bengal, Kolkata', (22.5726, 88.3639))\n]\n\n\ndef generate_user_id(length: int = 8) -> str:\n    \"\"\"Generate a random numerical user ID with the given length.\"\"\"\n    return ''.join(random.choices(\"0123456789\", k=length))\n\ndef generate_random_text(length: int = 10, use_digits: bool = True, use_special_chars: bool = False) -> str:\n    \"\"\"Generate a random text string with the given length.\"\"\"\n    characters = string.ascii_letters  # A-Z, a-z\n    \n    if use_digits:\n        characters += string.digits  # Add 0-9\n    \n    if use_special_chars:\n        characters += string.punctuation\n\n    return ''.join(random.choices(characters, k=length))\n\ndef text_to_base64(text: str) -> str:\n    encoded_bytes = base64.b64encode(str(text).encode('utf-8'))\n    return encoded_bytes.decode('utf-8')\n\ndef base64_to_text(base64_string: str) -> str:\n    decoded_bytes = base64.b64decode(base64_string)\n    return decoded_bytes.decode('utf-8')\n\nSALT = \"c2FuanVrdGE=\"\nlogged_in_users = set()\ndef hash_password(password):\n    return hashlib.sha256((SALT + password).encode()).hexdigest()\n\n@anvil.server.callable\ndef is_user_logged_in():\n    return anvil.server.session.get('user_email') in logged_in_users\n\n@anvil.server.callable\ndef register_user(username, email, password, birthday, disabilties, home, exact_location, blood_group, allergies, diseases, contacts):\n    if app_tables.users.get(email=email):\n        return False, \"Email already registered!\"\n\n    # Validate password strength (min 8 chars, 1 digit, 1 special character)\n    if len(password) < 8 or not re.search(r\"\\d\", password) or not re.search(r\"[!@#$%^&*]\", password):\n        return False, \"Password must be at least 8 characters long and contain a number & special character!\"\n    hashed_password = hash_password(password)\n    userid = generate_user_id(20)\n    token = f\"{text_to_base64(userid)}.{text_to_base64(time.time())}.{text_to_base64(generate_random_text(10, True, True))}\"\n    \n    app_tables.users.add_row(token=token, \n                             username=username, \n                             email=email, \n                             password=hashed_password, \n                             birthday=str(birthday), \n                             disablities=disabilties,\n                             home_location=home,\n                             user_id=userid,\n                             exact_location=exact_location,\n                             is_admin=False,\n                             allergies=allergies,\n                             diseases=diseases,\n                             blood_group=blood_group,\n                             important_contacts=contacts)\n\n    return True, \"User registered successfully!\"\n\n@anvil.server.callable\ndef login_user(email, password):\n    user = app_tables.users.get(email=email)\n    if user and user['password'] == hash_password(password):\n        anvil.server.session['user_email'] = email\n        logged_in_users.add(email)\n        token = user['token']\n        return True, \"Login successful!\", token\n    return False, \"Invalid email or password\", None\n\n@anvil.server.callable\ndef get_login_data(token):\n  user = app_tables.users.get(token=token)\n  if not user:\n    return False, user\n  return True, user\n\n\n@anvil.server.callable\ndef get_locations():\n  return locations\n\n@anvil.server.callable\ndef get_disasters():\n    return [\n        {\n            \"disaster_id\": row[\"disaster_id\"],\n            \"location\": row['location'],\n            \"reporter_id\": row['reporter_id'],\n            \"reported_time\": datetime.datetime.fromtimestamp(float(row[\"reported_time\"])).strftime(\"%I:%M:%S %p | %d-%m-%Y \") if row[\"reported_time\"] else None,\n            \"disaster_name\": row[\"disaster\"],\n            \"severity\": row[\"severity\"],\n        }\n        for row in app_tables.disasters.search()\n    ]\n\n\n@anvil.server.callable\ndef report_disaster(user, disaster, severity, lat, lon):\n  app_tables.disasters.add_row(disaster_id=generate_random_text(35, True, True), \n                               location=f'{lat}, {lon}', \n                               reported_time=str(time.time()),\n                               reporter_id=user['user_id'],\n                               disaster=disaster,\n                               severity=severity)\n\n\n@anvil.server.callable\ndef generate_qr(message, filename):\n    # Generate QR code\n    qr = qrcode.QRCode(\n        version=1,  # Adjust as needed\n        error_correction=qrcode.constants.ERROR_CORRECT_L,\n        box_size=10,\n        border=4,\n    )\n    qr.add_data(message)\n    qr.make(fit=True)\n\n    # Create the QR code image\n    img = qr.make_image(fill_color=\"black\", back_color=\"white\").convert(\"RGB\")\n\n    # Save to a BytesIO object\n    img_io = BytesIO()\n    img.save(img_io, format=\"PNG\")\n    img_io.seek(0)  # Move to the beginning of the file\n\n    # Return as an Anvil BlobMedia object\n    return anvil.BlobMedia(\"image/png\", img_io.getvalue(), name=filename)\n\n\n@anvil.server.callable\ndef delete_disaster(disaster_id= None):\n  print(disaster_id)\n  if not disaster_id:\n    for row in app_tables.disasters.search():\n            row.delete()\n    return True\n    \n  disaster = app_tables.disasters.get(disaster_id=disaster_id)\n  if disaster:\n    disaster.delete()\n    return True\n  return False\n\n\n@anvil.server.callable\ndef update_user(updated_data):\n    user = app_tables.users.get(user_id=updated_data[\"user_id\"])\n    if not user:\n        return False, \"User not found\"\n\n    user.update(\n        username=updated_data[\"username\"],  # Store as one string\n        email=updated_data[\"email\"],\n        birthday=updated_data[\"birthday\"],\n        disablities=updated_data.get(\"disabilities\", \"\"),\n        blood_group=updated_data.get(\"blood_group\", \"\"),\n        allergies=updated_data.get(\"allergies\", \"\"),\n        diseases=updated_data.get(\"diseases\", \"\"),\n        important_contacts=updated_data.get(\"contacts\", \"\"),\n        home_location=updated_data.get(\"home\", \"0,0\")\n    )\n\n    return True, \"User updated successfully\"\n\n\n@anvil.server.callable\ndef get_blood_reports():\n    return [\n        {\n            \"id\": row[\"id\"],\n            \"user_id\": row['user_id'],\n            \"location\": row['location'],\n            \"blood_type\": row[\"Blood_type\"]\n        }\n        for row in app_tables.blood_reports.search()\n    ]\n\n\n@anvil.server.callable\ndef submit_blood_report(user_id, location, blood_type):\n  app_tables.blood_reports.add_row(id=generate_random_text(20,True,False), user_id=user_id, location=location, Blood_type=blood_type)\n\n\n@anvil.server.callable\ndef delete_blood_report(blood_id=None):\n  if not blood_id:\n    for row in app_tables.disasters.search():\n            row.delete()\n    return True\n    \n  disaster = app_tables.blood_reports.get(id=blood_id)\n  if disaster:\n    disaster.delete()\n    return True\n  return False\n\n\n"
+  id: '1738860174060987851228792.2139'
+  name: server
+services:
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/tables.yml
+- client_config: {allow_signup: false, confirm_email: true, enable_automatically: true, use_email: true}
+  server_config: {user_table: users}
+  source: /runtime/services/anvil/users.yml
+startup: {module: Start, type: form}
+startup_form: null
+theme:
+  assets:
+  - {content: PGxpbmsgaHJlZj0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PVJvYm90bzozMDAsNDAwLDUwMCIgcmVsPSJzdHlsZXNoZWV0IiByZWw9InByZWxvYWQiIGFzPSJmb250IiBjcm9zc29yaWdpbj0iYW5vbnltb3VzIj4KCjxkaXYgY2xhc3M9InN0cnVjdHVyZSI+CiAgPGRpdiBjbGFzcz0iYXBwLWJhciIgYW52aWwtZHJvcC1jb250YWluZXI9Ii5hbnZpbC1jb250YWluZXIiIGFudmlsLWRyb3AtcmVkaXJlY3Q9Ii5wbGFjZWhvbGRlciI+CiAgICA8YSBjbGFzcz0ic2lkZWJhci10b2dnbGUiIGFudmlsLWlmLXNsb3QtZW1wdHk9InRvcC1sZWZ0LWJ0biIgYW52aWwtaGlkZS1pZi1zbG90LWVtcHR5PSJsZWZ0LW5hdiIgYW52aWwtZHJvcC1zbG90PSJ0b3AtbGVmdC1idG4iIGhyZWY9ImphdmFzY3JpcHQ6dm9pZCgwKSI+PGkgY2xhc3M9ImZhIGZhLWJhcnMiPjwvaT48L2E+CiAgICA8YSBjbGFzcz0ic2lkZWJhci10b2dnbGUgYW52aWwtZGVzaWduZXItb25seSIgYW52aWwtaWYtc2xvdC1lbXB0eT0idG9wLWxlZnQtYnRuIiBhbnZpbC1pZi1zbG90LWVtcHR5PSJsZWZ0LW5hdiIgYW52aWwtZHJvcC1zbG90PSJ0b3AtbGVmdC1idG4iPjxpIGNsYXNzPSJmYSBmYS1ibGFuayI+PC9pPjwvYT4KICAgIDxkaXYgY2xhc3M9InRvcC1sZWZ0LWJ0biIgYW52aWwtc2xvdD0idG9wLWxlZnQtYnRuIj48L2Rpdj4KICAgIDxkaXYgY2xhc3M9InRpdGxlIiBhbnZpbC1zbG90PSJ0aXRsZSI+CiAgICAgIDxkaXYgY2xhc3M9InBsYWNlaG9sZGVyIGFudmlsLWRlc2lnbmVyLW9ubHkiIGFudmlsLWlmLXNsb3QtZW1wdHk9InRpdGxlIiBhbnZpbC1kcm9wLWhlcmU+RHJvcCB0aXRsZSBoZXJlPC9kaXY+CiAgICA8L2Rpdj4KICAgIDxkaXYgY2xhc3M9ImFwcC1iYXItbmF2IiBhbnZpbC1zbG90PSJuYXYtcmlnaHQiPgogICAgICA8ZGl2IGNsYXNzPSJwbGFjZWhvbGRlciBhbnZpbC1kZXNpZ25lci1vbmx5IiBhbnZpbC1pZi1zbG90LWVtcHR5PSJuYXYtcmlnaHQiIGFudmlsLWRyb3AtaGVyZT5Ecm9wIGEgRmxvd1BhbmVsIGhlcmU8L2Rpdj4KICAgIDwvZGl2PgogICAgPGRpdiBzdHlsZT0iY2xlYXI6Ym90aCI+PC9kaXY+CiAgPC9kaXY+CgogIDxkaXYgY2xhc3M9Im5hdi1ob2xkZXIiPgogICAgPGRpdiBjbGFzcz0ibGVmdC1uYXYgYW52aWwtbWVhc3VyZS10aGlzIiBhbnZpbC1zbG90LXJlcGVhdD0ibGVmdC1uYXYiIGFudmlsLWRyb3AtY29udGFpbmVyPSI+LmFudmlsLWNvbnRhaW5lciI+CiAgICA8L2Rpdj4KICAgIDxkaXYgY2xhc3M9ImxlZnQtbmF2LXBsYWNlaG9sZGVyIGFudmlsLWRlc2lnbmVyLW9ubHkiIGFudmlsLWlmLXNsb3QtZW1wdHk9ImxlZnQtbmF2IiBhbnZpbC1kcm9wLXNsb3Q9ImxlZnQtbmF2Ij4KICAgICAgPGRpdiBjbGFzcz0icHJvbXB0Ij5UbyBhZGQgYSBzaWRlYmFyLCBkcm9wIGEgQ29sdW1uUGFuZWwgaGVyZS48L2Rpdj4KICAgIDwvZGl2PgogICAgCiAgICA8ZGl2IGNsYXNzPSJjb250ZW50Ij4KICAgICAgPGRpdiBhbnZpbC1zbG90LXJlcGVhdD0iZGVmYXVsdCIgY2xhc3M9ImFudmlsLW1lYXN1cmUtdGhpcyI+PC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9InBsYWNlaG9sZGVyIGRyb3AtaGVyZSIgYW52aWwtaWYtc2xvdC1lbXB0eT0iZGVmYXVsdCIgYW52aWwtZHJvcC1zbG90PSJkZWZhdWx0Ij5Ecm9wIGEgQ29sdW1uUGFuZWwgaGVyZS48L2Rpdj4KICAgIDwvZGl2PgogIDwvZGl2PgoKICA8ZGl2IGNsYXNzPSJuYXYtc2hpZWxkIj48L2Rpdj4KPC9kaXY+CjxkaXYgYW52aWwtZHJvcC1kZWZhdWx0IGFudmlsLWRyb3AtcmVkaXJlY3Q9Ii5wbGFjZWhvbGRlciIgYW52aWwtZHJvcC1jb250YWluZXI9Ii5hbnZpbC1jb250YWluZXIiPjwvZGl2PgogCjxzY3JpcHQ+CiAgdmFyIGxuID0gJCgnLnN0cnVjdHVyZSA+IC5uYXYtaG9sZGVyID4gLmxlZnQtbmF2Jyk7CiAgdmFyIGxucCA9ICQoJy5zdHJ1Y3R1cmUgPiAubmF2LWhvbGRlciA+IC5sZWZ0LW5hdi1wbGFjZWhvbGRlcicpOwogIHZhciBhcHBCYXIgPSAkKCcuYXBwLWJhcicpWzBdOwogIAogIGZ1bmN0aW9uIGhpZGVTaWRlYmFyKCkgewogICAgbG4uYW5pbWF0ZSh7bGVmdDogLWxuLm91dGVyV2lkdGgoKX0sIGZ1bmN0aW9uKCkgewogICAgICBsbi5yZW1vdmVDbGFzcygiaW4tdHJhbnNpdGlvbiBzaG93biIpLmFkZENsYXNzKCJoaWRkZW4iKTsKICAgICAgJCgnLm5hdi1zaGllbGQnKS5yZW1vdmVDbGFzcygic2hvd24iKTsKICAgICAgJCh3aW5kb3cpLnRyaWdnZXIoJ3Jlc2l6ZScpOwogICAgfSk7CiAgICBpZiAod2luZG93LmlubmVyV2lkdGggPiA5OTgpIHsgCiAgICAgICQoJy5jb250ZW50JykuYW5pbWF0ZSh7J21hcmdpbi1sZWZ0JzowfSwgZnVuY3Rpb24oKXt9KQogICAgfQogIH0KICAKICBmdW5jdGlvbiBzaG93U2lkZWJhcigpIHsKICAgICQoJy5uYXYtc2hpZWxkJykuYWRkQ2xhc3MoInNob3duIik7CiAgICBsbi5hZGRDbGFzcygic2hvd24iKS5yZW1vdmVDbGFzcygiaGlkZGVuIikuY3NzKHtsZWZ0OiAiLTEwMCUifSkuY3NzKHtsZWZ0OiAtbG4ub3V0ZXJXaWR0aCgpfSkuYW5pbWF0ZSh7bGVmdDogMH0sIGZ1bmN0aW9uKCkgewogICAgICBsbi5yZW1vdmVDbGFzcygiaW4tdHJhbnNpdGlvbiIpOwogICAgfSk7CiAgICAkKHdpbmRvdykudHJpZ2dlcigncmVzaXplJyk7CiAgICBpZiAod2luZG93LmlubmVyV2lkdGggPiA5OTgpIHsKICAgICAgJCgnLmNvbnRlbnQnKS5hbmltYXRlKHsnbWFyZ2luLWxlZnQnOiBsbi5vdXRlcldpZHRoKCkudG9TdHJpbmcoKSArICdweCd9LCBmdW5jdGlvbigpe30pCiAgICB9IAogIH0KICAKICAkKCcuc2lkZWJhci10b2dnbGUsIC5uYXYtc2hpZWxkJykub2ZmKCdjbGljaycpLm9uKCdjbGljaycsIGZ1bmN0aW9uKCkgeyAKICAgIGlmIChsbi5pcygiOnZpc2libGUiKSB8fCAkKCcubmF2LXNoaWVsZCcpLmlzKCIuc2hvd24iKSkgewogICAgICBoaWRlU2lkZWJhcigpOwogICAgfSBlbHNlIGlmKCFsbi5pcygiOmVtcHR5IikpIHsKICAgICAgc2hvd1NpZGViYXIoKTsKICAgIH0KICB9KTsKICAkKCcubGVmdC1uYXYnKS5vZmYoJ2NsaWNrJykub24oJ2NsaWNrJywgJ2EsIGJ1dHRvbicsIGZ1bmN0aW9uKCkgewogICAgaWYgKCQoJy5uYXYtc2hpZWxkJykuaXMoIjp2aXNpYmxlIikpIHsKICAgICAgJCgnLm5hdi1zaGllbGQnKS50cmlnZ2VyKCdjbGljaycpOwogICAgfQogIH0pOwogIAogIGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ3Njcm9sbCcsIGZ1bmN0aW9uKCkgewogICAgaWYgKGFwcEJhci5jbGFzc0xpc3QuY29udGFpbnMoJ3Njcm9sbGVkJykpIHsKICAgICAgaWYgKHdpbmRvdy5zY3JvbGxZID09PSAwKSB7CiAgICAgICAgYXBwQmFyLmNsYXNzTGlzdC5yZW1vdmUoJ3Njcm9sbGVkJykKICAgICAgfQogICAgfQogICAgZWxzZSB7CiAgICAgIGFwcEJhci5jbGFzc0xpc3QuYWRkKCdzY3JvbGxlZCcpCiAgICB9CiAgfSk7CgogIGZ1bmN0aW9uIGFkZE1hcmdpblRvQ29udGVudCgpIHsKICAgIC8vY2hlY2sgaWYgdGhlcmUgaXMgYSBmcmVlIGJhbm5lciBhbmQgc2V0IHRoZSB0b3AgbWFyZ2luIGFjY29yZGluaW5nbHkKICAgIGxldCB0b3BNYXJnaW47CiAgICBpZiAoJCgnI2FudmlsLWhlYWRlcicpLmNzcygnZGlzcGxheScpID09ICdibG9jaycpIHsKICAgICAgdG9wTWFyZ2luID0gYXBwQmFyLmNsaWVudEhlaWdodCArIDUwCiAgICB9IGVsc2UgewogICAgICB0b3BNYXJnaW4gPSBhcHBCYXIuY2xpZW50SGVpZ2h0CiAgICB9CiAgICAvL3RoZSBsZWZ0LW5hdi1wbGFjZWhvbGRlciBpbiB0aGUgZGVzaWduZXIgbmVlZHMgdG8gc2hpZnQgZG93biBmb3IgdGhlIGFwcCBiYXIKICAgIGxucC5jc3Moeyd0b3AnOiBhcHBCYXIuY2xpZW50SGVpZ2h0LnRvU3RyaW5nKCkgKyAncHgnfSkKCiAgICAvL2lmIHRoZSB3aW5kb3cgaXMgc21hbGwKICAgIGlmICh3aW5kb3cuaW5uZXJXaWR0aCA8IDk5OSkgewogICAgICAvL2lmIGluIEFudmlsIGRlc2lnbmVyCiAgICAgIGlmICh3aW5kb3cuYW52aWxJbkRlc2lnbmVyKSB7CiAgICAgICAgLy9hZGQgbGVmdCBtYXJnaW4gdG8gY29udGVudCB0byBtYWtlIHJvb20gZm9yIGxlZnQtbmF2IG9yIGxlZnQtbmF2LXBsYWNlaG9sZGVyCiAgICAgICAgJCgnLmNvbnRlbnQnKS5jc3MoeydtYXJnaW4tbGVmdCc6IE1hdGgubWF4KGxuLm91dGVyV2lkdGgoKSwgbG5wLm91dGVyV2lkdGgoKSkudG9TdHJpbmcoKSArICdweCd9KTsKICAgICAgICAkKCcuY29udGVudCcpLmNzcyh7J21hcmdpbi10b3AnOiBhcHBCYXIuY2xpZW50SGVpZ2h0LnRvU3RyaW5nKCkgKyAncHgnfSkKICAgICAgICBsbi5jc3Moeyd0b3AnOiB0b3BNYXJnaW4udG9TdHJpbmcoKSArICdweCd9KQogICAgICB9IGVsc2UgewogICAgICAgIC8vaWYgbm90IGluIEFudmlsIGRlc2lnbmVyLCBjb250ZW50IGdldHMgbm8gbGVmdCBtYXJnaW4gYmVjYXVzZSBsZWZ0LW5hdiB3aWxsIGJlIGEgbW9kYWwgb3ZlcmxheQogICAgICAgICQoJy5jb250ZW50JykuY3NzKHsnbWFyZ2luLWxlZnQnOiAnMHB4J30pOwogICAgICAgIGxuLmNzcyh7J3RvcCc6ICcwcHgnfSkKICAgICAgICAvL2FkZCB0b3AgbWFyZ2luIHRvIGNvbnRlbnQKICAgICAgICAkKCcuY29udGVudCcpLmNzcyh7J21hcmdpbi10b3AnOiB0b3BNYXJnaW4udG9TdHJpbmcoKSArICdweCd9KTsKICAgICAgfQogICAgfSBlbHNlIHsKICAgICAgLy9pZiB0aGUgd2luZG93IGlzIGJpZywgYWRkIG1hcmdpbiB0byBjb250ZW50IGFuZCBsZWZ0LW5hdiBmb3IgYXBwIGJhcgogICAgICAkKCcuY29udGVudCcpLmNzcyh7J21hcmdpbi10b3AnOiBhcHBCYXIuY2xpZW50SGVpZ2h0LnRvU3RyaW5nKCkgKyAncHgnfSk7CiAgICAgIGxuLmNzcyh7J3RvcCc6IHRvcE1hcmdpbi50b1N0cmluZygpICsgJ3B4J30pCiAgICAgIGlmICh3aW5kb3cuYW52aWxJbkRlc2lnbmVyKSB7CiAgICAgICAgLy9pZiBpbiB0aGUgZGVzaWduZXIsIGFkZCBsZWZ0IG1hcmdpbiBmb3IgZWl0aGVyIHRoZSBsZWZ0LW5hdiBvciB0aGUgcGxhY2Vob2xkZXIKICAgICAgICAkKCcuY29udGVudCcpLmNzcyh7J21hcmdpbi1sZWZ0JzogTWF0aC5tYXgobG4ub3V0ZXJXaWR0aCgpLCBsbnAub3V0ZXJXaWR0aCgpKS50b1N0cmluZygpICsgJ3B4J30pOwogICAgICB9IGVsc2UgewogICAgICAgIC8vaWYgbm90IGluIHRoZSBkZXNpZ25lciwgb25seSBhZGQgbWFyZ2luIGZvciB0aGUgbGVmdC1uYXYgYmVjYXVzZSBwbGFjZWhvbGRlciBzdGlsbCBoYXMgYSB3aWR0aCBvdXRzaWRlIG9mIGRlc2lnbmVyCiAgICAgICAgJCgnLmNvbnRlbnQnKS5jc3MoeydtYXJnaW4tbGVmdCc6IGxuLm91dGVyV2lkdGgoKSArICdweCd9KTsKICAgICAgfQogICAgfQogIH0KICAKICBhZGRNYXJnaW5Ub0NvbnRlbnQoKQogIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKCdyZXNpemUnLCBhZGRNYXJnaW5Ub0NvbnRlbnQpOwogCjwvc2NyaXB0Pg==, id: 2PWYNHD7PZLU3NVF753RREZ4GCPAGHI3, name: standard-page.html}
+  - {content: LyoqCiBUaGlzIENTUyBpbXBsZW1lbnRzIHRoZSBNYXRlcmlhbCBEZXNpZ24gMyBsb29rIGFuZCBmZWVsIGZvciBBbnZpbCBhcHBzLgogKiovCgovKiBTdG9wIHBhbmVsLWNvbHMgY3V0dGluZyBvZmYgZHJvcCBzaGFkb3dzICovCi5hbnZpbC1wYW5lbC1jb2wgewogIHBhZGRpbmctYm90dG9tOiAxMHB4OwogIG1hcmdpbi1ib3R0b206IC0xMHB4Owp9CgouY29udGVudCA+IC5wbGFjZWhvbGRlciB7CiAgbWFyZ2luOiAxNnB4OwogIGNvbG9yOiAjODg4OwogIGZvbnQtc2l6ZTogMThweDsKICBvdXRsaW5lOiAxcHggZG90dGVkOwogIHBhZGRpbmc6IDE2cHg7CiAgdGV4dC1hbGlnbjogY2VudGVyOwp9CgovKiBQdXQgdGhpbmdzIG9uIGEgNHB4IGdyaWQgKG5vbmUgb2YgdGhpcyA3cHggbm9uc2Vuc2UpICovCi5oYXMtdGV4dCAuYW52aWwtY29tcG9uZW50LWljb24ubGVmdC1pY29uIHsgbWFyZ2luLXJpZ2h0OiA4cHg7IH0KLmhhcy10ZXh0IC5hbnZpbC1jb21wb25lbnQtaWNvbi5yaWdodC1pY29uIHsgbWFyZ2luLWxlZnQ6IDhweDsgfQoKYT4uYW52aWwtY29tcG9uZW50LWljb24ubGVmdF9lZGdlLWljb24sCmE+LmFudmlsLWNvbXBvbmVudC1pY29uLnJpZ2h0X2VkZ2UtaWNvbiwKLmFudmlsLWxhYmVsPi5hbnZpbC1jb21wb25lbnQtaWNvbi5sZWZ0X2VkZ2UtaWNvbiwKLmFudmlsLWxhYmVsPi5hbnZpbC1jb21wb25lbnQtaWNvbi5yaWdodF9lZGdlLWljb24gewogIHBhZGRpbmctdG9wOiA4cHg7CiAgcGFkZGluZy1ib3R0b206IDhweDsKfQouYW52aWwtbGFiZWw+LmxhYmVsLXRleHQsIGE+LmxpbmstdGV4dCB7CiAgcGFkZGluZy10b3A6IDhweDsKICBwYWRkaW5nLWJvdHRvbTogOHB4Owp9Ci5maWxlLWxvYWRlcj5sYWJlbCB7CiAgICBwYWRkaW5nOiA4cHg7Cn0KLmNoZWNrYm94IGxhYmVsLCAucmFkaW8gbGFiZWwgewogICAgcGFkZGluZy10b3A6IDhweDsgcGFkZGluZy1yaWdodDogOHB4OyBwYWRkaW5nLWJvdHRvbTogOHB4Owp9CgovKlRPRE86IHNlZSBpZiB0aGlzIHNwYWNpbmcgc3R1ZmYgbmVlZHMgdG8gYmUgY2hhbmdlZCovCi5hbnZpbC1zcGFjaW5nLWFib3ZlLW5vbmUgeyBtYXJnaW4tdG9wOiAwcHg7IH0KLmFudmlsLXNwYWNpbmctYWJvdmUtc21hbGwgeyBtYXJnaW4tdG9wOiA0cHg7IH0KLmFudmlsLXNwYWNpbmctYWJvdmUtbWVkaXVtIHsgbWFyZ2luLXRvcDogOHB4OyB9Ci5hbnZpbC1zcGFjaW5nLWFib3ZlLWxhcmdlIHsgbWFyZ2luLXRvcDogMTZweDsgfQouYW52aWwtc3BhY2luZy1iZWxvdy1ub25lIHsgbWFyZ2luLWJvdHRvbTogMHB4OyB9Ci5hbnZpbC1zcGFjaW5nLWJlbG93LXNtYWxsIHsgbWFyZ2luLWJvdHRvbTogNHB4OyB9Ci5hbnZpbC1zcGFjaW5nLWJlbG93LW1lZGl1bSB7IG1hcmdpbi1ib3R0b206IDhweDsgfQouYW52aWwtc3BhY2luZy1iZWxvdy1sYXJnZSB7IG1hcmdpbi1ib3R0b206IDE2cHg7IH0KCgouY29sLXBhZGRpbmcuY29sLXBhZGRpbmctdGlueSB7IHBhZGRpbmc6IDAgMnB4OyB9Ci5jb2x1bW4tcGFuZWwuY29sLXBhZGRpbmctdGlueSA+IC5hbnZpbC1wYW5lbC1zZWN0aW9uID4gLmFudmlsLXBhbmVsLXNlY3Rpb24tY29udGFpbmVyID4gLmFudmlsLXBhbmVsLXNlY3Rpb24tZ3V0dGVyIHsgbWFyZ2luOiAwIC0ycHg7IH0KCi5jb2wtcGFkZGluZy5jb2wtcGFkZGluZy1zbWFsbCB7IHBhZGRpbmc6IDAgNHB4OyB9Ci5jb2x1bW4tcGFuZWwuY29sLXBhZGRpbmctc21hbGwgPiAuYW52aWwtcGFuZWwtc2VjdGlvbiA+IC5hbnZpbC1wYW5lbC1zZWN0aW9uLWNvbnRhaW5lciA+IC5hbnZpbC1wYW5lbC1zZWN0aW9uLWd1dHRlciB7IG1hcmdpbjogMCAtNHB4OyB9CgouY29sLXBhZGRpbmcuY29sLXBhZGRpbmctbWVkaXVtIHsgcGFkZGluZzogMCA4cHg7IH0KLmNvbHVtbi1wYW5lbC5jb2wtcGFkZGluZy1tZWRpdW0gPiAuYW52aWwtcGFuZWwtc2VjdGlvbiA+IC5hbnZpbC1wYW5lbC1zZWN0aW9uLWNvbnRhaW5lciA+IC5hbnZpbC1wYW5lbC1zZWN0aW9uLWd1dHRlciB7IG1hcmdpbjogMCAtOHB4OyB9CgouY29sLXBhZGRpbmcuY29sLXBhZGRpbmctbGFyZ2UgeyBwYWRkaW5nOiAwIDEycHg7IH0KLmNvbHVtbi1wYW5lbC5jb2wtcGFkZGluZy1sYXJnZSA+IC5hbnZpbC1wYW5lbC1zZWN0aW9uID4gLmFudmlsLXBhbmVsLXNlY3Rpb24tY29udGFpbmVyID4gLmFudmlsLXBhbmVsLXNlY3Rpb24tZ3V0dGVyIHsgbWFyZ2luOiAwIC0xMnB4OyB9CgouY29sLXBhZGRpbmcuY29sLXBhZGRpbmctaHVnZSB7IHBhZGRpbmc6IDAgMjBweDsgfQouY29sdW1uLXBhbmVsLmNvbC1wYWRkaW5nLWh1Z2UgPiAuYW52aWwtcGFuZWwtc2VjdGlvbiA+IC5hbnZpbC1wYW5lbC1zZWN0aW9uLWNvbnRhaW5lciA+IC5hbnZpbC1wYW5lbC1zZWN0aW9uLWd1dHRlciB7IG1hcmdpbjogMCAtMjBweDsgfQoKLmZsb3ctcGFuZWwuZmxvdy1zcGFjaW5nLXRpbnkgPiAuZmxvdy1wYW5lbC1ndXR0ZXIgeyBtYXJnaW46IDAgLTJweDsgfQouZmxvdy1wYW5lbC5mbG93LXNwYWNpbmctdGlueSA+IC5mbG93LXBhbmVsLWd1dHRlciA+IC5mbG93LXBhbmVsLWl0ZW0geyAKICBtYXJnaW4tbGVmdDogMnB4OwogIG1hcmdpbi1yaWdodDogMnB4Owp9CgouZmxvdy1wYW5lbC5mbG93LXNwYWNpbmctc21hbGwgPiAuZmxvdy1wYW5lbC1ndXR0ZXIgeyBtYXJnaW46IDAgLTRweDsgfQouZmxvdy1wYW5lbC5mbG93LXNwYWNpbmctc21hbGwgPiAuZmxvdy1wYW5lbC1ndXR0ZXIgPiAuZmxvdy1wYW5lbC1pdGVtIHsgCiAgbWFyZ2luLWxlZnQ6IDRweDsKICBtYXJnaW4tcmlnaHQ6IDRweDsKfQoKLmZsb3ctcGFuZWwuZmxvdy1zcGFjaW5nLW1lZGl1bSA+IC5mbG93LXBhbmVsLWd1dHRlciB7IG1hcmdpbjogMCAtOHB4OyB9Ci5mbG93LXBhbmVsLmZsb3ctc3BhY2luZy1tZWRpdW0gPiAuZmxvdy1wYW5lbC1ndXR0ZXIgPiAuZmxvdy1wYW5lbC1pdGVtIHsgCiAgbWFyZ2luLWxlZnQ6IDhweDsKICBtYXJnaW4tcmlnaHQ6IDhweDsKfQoKLmZsb3ctcGFuZWwuZmxvdy1zcGFjaW5nLWxhcmdlID4gLmZsb3ctcGFuZWwtZ3V0dGVyIHsgbWFyZ2luOiAwIC0xMnB4OyB9Ci5mbG93LXBhbmVsLmZsb3ctc3BhY2luZy1sYXJnZSA+IC5mbG93LXBhbmVsLWd1dHRlciA+IC5mbG93LXBhbmVsLWl0ZW0geyAKICBtYXJnaW4tbGVmdDogMTJweDsKICBtYXJnaW4tcmlnaHQ6IDEycHg7Cn0KCi5mbG93LXBhbmVsLmZsb3ctc3BhY2luZy1odWdlID4gLmZsb3ctcGFuZWwtZ3V0dGVyIHsgbWFyZ2luOiAwIC0yMHB4OyB9Ci5mbG93LXBhbmVsLmZsb3ctc3BhY2luZy1odWdlID4gLmZsb3ctcGFuZWwtZ3V0dGVyID4gLmZsb3ctcGFuZWwtaXRlbXsgCiAgbWFyZ2luLWxlZnQ6IDIwcHg7CiAgbWFyZ2luLXJpZ2h0OiAyMHB4Owp9CgoKLyogVHlwb2dyYXBoeSAqLwpib2R5IHsKICBmb250LWZhbWlseTogUm9ib3RvLCBOb3RvLCBBcmlhbCwgc2Fucy1zZXJpZjsKICBmb250LXNpemU6IDE0cHg7CiAgbGluZS1oZWlnaHQ6IDEuNDI4NjsKICBjb2xvcjogJWNvbG9yOk9uIFN1cmZhY2UlOwogIGJhY2tncm91bmQtY29sb3I6ICVjb2xvcjpCYWNrZ3JvdW5kJTsKICBtaW4taGVpZ2h0OiBjYWxjKDEwMHZoIC0gNTZweCkKfQoKQG1lZGlhIHByaW50IHsKICBib2R5IHsKICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlOwogIH0KfQoKYSwgYTpmb2N1cyB7CiAgdGV4dC1kZWNvcmF0aW9uOiBub25lOwogIGNvbG9yOiAlY29sb3I6UHJpbWFyeSU7Cn0KCmE6aG92ZXIsIGE6YWN0aXZlIHsKY29sb3I6ICVjb2xvcjpPbiBQcmltYXJ5IENvbnRhaW5lciU7Cn0KCi5hbnZpbC1yb2xlLWRpc3BsYXkgewogIGZvbnQtc2l6ZTogNTdweDsKICBsaW5lLWhlaWdodDogNjRweDsKICBmb250LXdlaWdodDogNDAwOwp9CgouYW52aWwtcm9sZS1oZWFkbGluZSB7CiAgZm9udC1zaXplOiAzMnB4OwogIGxpbmUtaGVpZ2h0OiA0MHB4OwogIGZvbnQtd2VpZ2h0OiA0MDA7Cn0KCi5hbnZpbC1yb2xlLXRpdGxlIHsKICBmb250LXNpemU6IDIycHg7CiAgbGluZS1oZWlnaHQ6IDI4cHg7CiAgZm9udC13ZWlnaHQ6IDUwMDsKfQoKLmFudmlsLXJvbGUtYm9keSB7CiAgZm9udC1zaXplOiAxNHB4OwogIGxpbmUtaGVpZ2h0OiAyMHB4OwogIGZvbnQtd2VpZ2h0OiA0MDA7Cn0KCi5hbnZpbC1yb2xlLWlucHV0LXByb21wdCB7CiAgZm9udC1zaXplOiAxNnB4OwogIGxpbmUtaGVpZ2h0OiAxLjU7Cn0KCi5hbnZpbC1yb2xlLWJvZHkgPiAubGFiZWwtdGV4dCwgLmFudmlsLXJvbGUtYm9keSAubGluay10ZXh0IHsKICBwYWRkaW5nLXRvcDogMDsKICBwYWRkaW5nLWJvdHRvbTogMDsKfQoKLyogUGFnZSBzdHJ1Y3R1cmU6IEFwcCBiYXIgd2l0aCBvcHRpb25hbCBsZWZ0IG5hdiAqLwouc3RydWN0dXJlIHsKLyogICBkaXNwbGF5OiBmbGV4OwogIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47ICovCiAgbWluLWhlaWdodDogMTAwdmg7CiAgbWluLWhlaWdodDogY2FsYygxMDB2aCAtICVhbnZpbC1iYW5uZXItaGVpZ2h0JSk7Ci8qICAgaGVpZ2h0OiAwOyAvKiBUbyBtYWtlIGZsZXgtZ3JvdyB3b3JrIGluIElFICovCn0KCi8qIEhvd2V2ZXIsIHRoaXMgYnJlYWtzIHRoZSBkZXNpZ25lcidzIGhlaWdodCBtZWFzdXJlbWVudC4gSUUgaXNuJ3Qgc3VwcG9ydGVkIGZvciB0aGUgZGVzaWduZXIsIHNvIHNldCBpdCBiYWNrLiAqLwouZGVzaWduZXIgLnN0cnVjdHVyZSB7CiAgaGVpZ2h0OiBpbml0aWFsOwp9CgouYXBwLWJhciB7CiAgei1pbmRleDogMTAwMDsKICBwb3NpdGlvbjogZml4ZWQ7CiAgdG9wOiAwOwogIHRvcDogJWFudmlsLWJhbm5lci1oZWlnaHQlOwogIHJpZ2h0OiAwOwogIGxlZnQ6IDA7Ci8qICAgZmxleDogMCAwOwogIGZsZXgtYmFzaXM6IGF1dG87CiAgZmxleC1iYXNpczogY29udGVudDsgKi8KfQoKLm5hdi1ob2xkZXIgewogIGRpc3BsYXk6IGZsZXg7Ci8qICAgZmxleC1ncm93OiAxOwogIG92ZXJmbG93LXk6IGluaXRpYWw7ICovCn0KCkBtZWRpYSBwcmludCB7CiAgLm5hdi1ob2xkZXIgewogICAgb3ZlcmZsb3cteTogaW5pdGlhbDsKICB9Cn0KCgovKiBNb2JpbGUgYW5kIGRlc2t0b3AgbWFyZ2lucyBmb3IgY29udGVudCAqLwouY29udGVudCA+ICogPiAuYW52aWwtY29udGFpbmVyIHsKICBwYWRkaW5nOiA4cHg7Cn0KCkBtZWRpYShtaW4td2lkdGg6OTkxcHgpIHsKICAuY29udGVudCA+ICogPiAuYW52aWwtY29udGFpbmVyIHsKICAgIHBhZGRpbmc6IDE2cHggMjRweDsKICB9Cn0KCi5jb250ZW50IC5hbnZpbC1tZWFzdXJlLXRoaXMgewogIHBhZGRpbmctYm90dG9tOiAxcHg7IC8qIFByZXZlbnQgbWFyZ2luIGNvbGxhcHNlIG1lc3NpbmcgdXAgZW1iZWRkaW5nICovCn0KCi8qIEFsbG93IG92ZXJmbG93cyB0byBzaG93IGRyb3Agc2hhZG93cyBpbiBDb2x1bW5QYW5lbHMKICAgVGhpcyBjYW4gY3JlYXRlIHVud2FudGVkIHNjcm9sbGJhcnM7IHdlIGNvbXBlbnNhdGUgZm9yIHRoaXMgYXQgdGhlIHRvcCBsZXZlbCB3aXRoIC5uYXYtaG9sZGVyIC5jb250ZW50IHtvdmVyZmxvdy14OiBoaWRkZW47fQoqLwouYW52aWwtY29udGFpbmVyLW92ZXJmbG93IHsKICBvdmVyZmxvdy14OiB2aXNpYmxlOwogIG92ZXJmbG93LXk6IHZpc2libGU7Cn0KCi8qIERlc2t0b3A6IE5hdiBiYXIgcGlubmVkICovCgoubmF2LWhvbGRlciB7CiAgZGlzcGxheTogZmxleDsKICBmbGV4LWRpcmVjdGlvbjogcm93Owp9CgoubmF2LWhvbGRlciAubGVmdC1uYXYgewogIHBvc2l0aW9uOiBmaXhlZDsKLyogICB0b3A6IDA7ICovCiAgbGVmdDogMDsKICBmbGV4LXNocmluazogMDsKICBtaW4td2lkdGg6IDI0MHB4OwogIG1heC13aWR0aDogNDAwcHg7Cn0KCi5uYXYtc2hpZWxkIHsKICBkaXNwbGF5OiBub25lOwp9CgovKiBNb2JpbGU6IE5hdiBiYXIgaXMgYSBtb2RhbCBvdmVybGF5ICovCgpAbWVkaWEobWF4LXdpZHRoOjk5OHB4KSB7CiAgaHRtbDpub3QoLmRlc2lnbmVyKSAubmF2LWhvbGRlciB7CiAgICBkaXNwbGF5OiBibG9jazsKICB9CiAgaHRtbDpub3QoLmRlc2lnbmVyKSAubmF2LWhvbGRlciAubGVmdC1uYXYgewogICAgdG9wOiAwOwogICAgYm90dG9tOiAwOwogICAgd2lkdGg6IGNhbGMoMTAwJSAtIDU2cHgpOwogICAgbWF4LXdpZHRoOiAzNjBweDsKICAgIHotaW5kZXg6IDM7CiAgICBib3JkZXItcmlnaHQ6IG5vbmU7CiAgICBib3JkZXItcmFkaXVzOiAwIDIwcHggMjBweCAwOwogIC8qIDE2ZHAgKi8gYm94LXNoYWRvdzogMCAxNnB4IDI0cHggMnB4IHJnYmEoMCwgMCwgMCwgMC4xNCksIDAgNnB4IDMwcHggNXB4IHJnYmEoMCwgMCwgMCwgMC4xMiksIDAgOHB4IDEwcHggLTVweCByZ2JhKDAsIDAsIDAsIDAuMik7CgogICAgZGlzcGxheTogbm9uZTsKICAgIHRyYW5zaXRpb246IHJpZ2h0IDAuNXM7CiAgICBoZWlnaHQ6IDEwMCU7CiAgfQogIAogIGh0bWw6bm90KC5kZXNpZ25lcikgLm5hdi1ob2xkZXIgLmxlZnQtbmF2LnNob3duIHsKICAgIGRpc3BsYXk6IGJsb2NrOwogIH0KICAubmF2LXNoaWVsZC5zaG93biB7CiAgICBkaXNwbGF5OiBibG9jazsKICAgIHBvc2l0aW9uOiBmaXhlZDsKICAgIHRvcDogMDsKICAgIGJvdHRvbTogMDsKICAgIGxlZnQ6IDA7CiAgICByaWdodDogMDsKICAgIHotaW5kZXg6IDI7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsMCwwLDAuMik7CiAgfQogfQoKLm5hdi1ob2xkZXIgLmxlZnQtbmF2LCAubGVmdC1uYXYtcGxhY2Vob2xkZXIgewogIGRpc3BsYXk6IGZsZXg7CiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjsKICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMGRlZywgJWNvbG9yOlByaW1hcnkgT3ZlcmxheSAxJSwgJWNvbG9yOlByaW1hcnkgT3ZlcmxheSAxJSksICVjb2xvcjpCYWNrZ3JvdW5kJTsKLyogICBib3JkZXItcmlnaHQ6IDFweCBzb2xpZCAjZTBlMGUwOyAqLwogIGZvbnQtc2l6ZTogMTRweDsKICBmb250LXdlaWdodDogNTAwOwogIGNvbG9yOiAlY29sb3I6T24gU3VyZmFjZSBWYXJpYW50JTsKICBvdmVyZmxvdy14OiBoaWRkZW47CiAgb3ZlcmZsb3cteTogYXV0bzsKICBwb3NpdGlvbjogZml4ZWQ7Ci8qICAgdG9wOiA1NHB4OyAqLwogIGhlaWdodDogY2FsYygxMDAlIC0gNTRweCk7IC8qdG9kbzogZml4IG9uIG1vYmlsZSovCn0KCgoubGVmdC1uYXYtcGxhY2Vob2xkZXIgewogIGRpc3BsYXk6IGJsb2NrOwogIHBhZGRpbmc6IDhweDsKICBsaW5lLWhlaWdodDogMTsKICB3aWR0aDogNThweDsKfQoubGVmdC1uYXYtcGxhY2Vob2xkZXIgLnByb21wdCB7CiAgZGlzcGxheTogaW5saW5lLWJsb2NrOwogIHdoaXRlLXNwYWNlOiBub3dyYXA7CiAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwwKSByb3RhdGUoLTkwZGVnKSB0cmFuc2xhdGUoLTUwJSwwKSB0cmFuc2xhdGUoMTVweCwxNnB4KTsKICBwYWRkaW5nOiAxNnB4IDE2cHg7CiAgY29sb3I6ICM4ODg7CiAgb3V0bGluZTogMXB4IGRvdHRlZCAjODg4OwogIHZpc2liaWxpdHk6IGhpZGRlbjsKfQouYW52aWwtaGlnaGxpZ2h0IC5sZWZ0LW5hdi1wbGFjZWhvbGRlciAucHJvbXB0IHsKICB2aXNpYmlsaXR5OiB2aXNpYmxlOwp9CgoubGVmdC1uYXYgPiAuY29sdW1uLXBhbmVsIHsKICBwYWRkaW5nOiAyNHB4IDA7Cn0KLmxlZnQtbmF2ID4gLmNvbHVtbi1wYW5lbCA+IC5hbnZpbC1wYW5lbC1zZWN0aW9uID4gLmFudmlsLXBhbmVsLXNlY3Rpb24tY29udGFpbmVyOm5vdCguZnVsbC13aWR0aC1yb3cpIHsKICBtYXJnaW46IDAgMTZweDsKICB3aWR0aDogaW5pdGlhbDsKICBtYXgtd2lkdGg6IGluaXRpYWw7CiAgb3ZlcmZsb3cteDogdmlzaWJsZTsKfQoubGVmdC1uYXYgPiAuY29sdW1uLXBhbmVsID4gLmFudmlsLXBhbmVsLXNlY3Rpb246Zmlyc3QtY2hpbGQgPiAuYW52aWwtcGFuZWwtc2VjdGlvbi1jb250YWluZXIuZnVsbC13aWR0aC1yb3cgewogIG1hcmdpbi10b3A6IC0yNHB4Owp9Ci5sZWZ0LW5hdiA+IC5jb2x1bW4tcGFuZWwgPiAuYW52aWwtcGFuZWwtc2VjdGlvbiA+IC5hbnZpbC1wYW5lbC1zZWN0aW9uLWNvbnRhaW5lciA+IC5hbnZpbC1wYW5lbC1zZWN0aW9uLWd1dHRlciA+IC5hbnZpbC1wYW5lbC1yb3cgPiAuYW52aWwtcGFuZWwtY29sIHsKICBvdmVyZmxvdy14OiB2aXNpYmxlOwp9CgovKiBNYWtlIGFsbCB0aGUgc2lkZWJhciBpY29ucyBsb29rIG5pY2UgKi8KCi5sZWZ0LW5hdiAuYW52aWwtY29tcG9uZW50LWljb24ubGVmdC1pY29uIHsKICB3aWR0aDogMDsKICBtYXJnaW4tcmlnaHQ6IDI0cHg7CiAgcG9zaXRpb246IHJlbGF0aXZlOwp9CgoubGVmdC1uYXYgLmFudmlsLWNvbXBvbmVudC1pY29uLmxlZnRfZWRnZS1pY29uLCAubGVmdC1uYXYgLmFudmlsLWNvbXBvbmVudC1pY29uLnJpZ2h0X2VkZ2UtaWNvbiB7CiAgbGVmdDogMTZweDsKICBwYWRkaW5nLXRvcDogMnB4OwogIHdpZHRoOiAwOwp9CgoubGVmdC1uYXYgLmFudmlsLWNvbXBvbmVudC1pY29uLnJpZ2h0X2VkZ2UtaWNvbiB7CiAgbGVmdDogaW5pdGlhbDsKICByaWdodDogMTZweDsKICB0b3A6IDA7CiAgcGFkZGluZy10b3A6IDJweDsKfQoKLyogU2lkZWJhciBsaW5rcyAoYW5kIGxhYmVscyB3aXRoIGVkZ2UgaWNvbnMpIGdvICsxNnB4IHdpZGVyCiAgIChUb3AtbGV2ZWwgY29sdW1ucyBpbiBDb2x1bW5QYW5lbHMgZ2V0IG92ZXJmbG93LXggdmlzaWJsZSBbc2VlIGFib3ZlXXRvIGVuYWJsZSB0aGlzKQoqLwoKLmxlZnQtbmF2IGEsIC5sZWZ0LW5hdiAuYW52aWwtbGFiZWwsIC5sZWZ0LW5hdiAuYW52aWwtbGFiZWwubGVmdF9lZGdlLWljb24sIC5sZWZ0LW5hdiAuYW52aWwtbGFiZWwucmlnaHRfZWRnZS1pY29uIHsKICBjb2xvcjogJWNvbG9yOk9uIFN1cmZhY2UgVmFyaWFudCU7CiAgbWFyZ2luOiAwIC04cHg7CiAgcGFkZGluZzogNHB4IDE2cHg7CiAgYm9yZGVyLXJhZGl1czogMTAwcHg7Cn0KCi5sZWZ0LW5hdiAuYW52aWwtY29tcG9uZW50LmxlZnRfZWRnZS1pY29uIHsKICBwYWRkaW5nLWxlZnQ6IDcycHg7Cn0KCi5sZWZ0LW5hdiBhOmhvdmVyLCAuYXBwLWJhciBhOmhvdmVyLCAuYXBwLWJhciBhOmFjdGl2ZSB7CiAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDBkZWcsICVjb2xvcjpEYXJrIE92ZXJsYXkgMSUsICVjb2xvcjpEYXJrIE92ZXJsYXkgMSUpLCBsaW5lYXItZ3JhZGllbnQoMGRlZywgJWNvbG9yOlByaW1hcnkgT3ZlcmxheSAxJSwgJWNvbG9yOlByaW1hcnkgT3ZlcmxheSAxJSksICVjb2xvcjpCYWNrZ3JvdW5kJTsKICBvcGFjaXR5OiAxMDAlOwp9CgoubGVmdC1uYXYgYS5hbnZpbC1yb2xlLXNlbGVjdGVkLCAuYXBwLWJhciBhLmFudmlsLXJvbGUtc2VsZWN0ZWQgIHsKICBiYWNrZ3JvdW5kLWNvbG9yOiAlY29sb3I6U2Vjb25kYXJ5IENvbnRhaW5lciU7CiAgY29sb3I6ICVjb2xvcjpPbiBTZWNvbmRhcnkgQ29udGFpbmVyJTsKfQoKLmxlZnQtbmF2IGEuYW52aWwtcm9sZS1zZWxlY3RlZDpob3ZlciwgLmFwcC1iYXIgYS5hbnZpbC1yb2xlLXNlbGVjdGVkOmhvdmVyIHsKICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMGRlZywgJWNvbG9yOkRhcmsgT3ZlcmxheSAxJSwgJWNvbG9yOkRhcmsgT3ZlcmxheSAxJSksICVjb2xvcjpTZWNvbmRhcnkgQ29udGFpbmVyJTsKfQoKLmRlc2lnbmVyIC5uYXYtaG9sZGVyIC5sZWZ0LW5hdiB7CiAgbWluLXdpZHRoOiA1NnB4Owp9CgouZGVzaWduZXIgLm5hdi1ob2xkZXIgLmxlZnQtbmF2ID4gLmFudmlsLWNvbXBvbmVudCB7CiAgbWluLXdpZHRoOiAxNjBweDsKfQoKLm5hdi1ob2xkZXIgLmxlZnQtbmF2ID4gLmFudmlsLWNvbXBvbmVudCB7CiAgbWFyZ2luLXRvcDogMDsKICBtYXJnaW4tYm90dG9tOiAwOwp9CgoubmF2LWhvbGRlciB7CiAgZmxleDogMTsKfQoKLmNvbnRlbnQgewogIGZsZXg6IDE7CiAgb3ZlcmZsb3cteDogaGlkZGVuOwp9CgovKiBDb21wb25lbnRzOiBBcHAgQmFyICovCi5hcHAtYmFyIHsKICBtaW4taGVpZ2h0OiA1NnB4OwogIHBhZGRpbmc6IDAgMTZweCAwIDcycHg7CiAgcG9zaXRpb246IGZpeGVkOwogIHdpZHRoOiAxMDAlOwogIAogIGxpbmUtaGVpZ2h0OiA0MHB4OwogIGZvbnQtc2l6ZTogMjBweDsKCiAgYmFja2dyb3VuZC1jb2xvcjogJWNvbG9yOlN1cmZhY2UlOwogIHRyYW5zaXRpb246IGJhY2tncm91bmQtY29sb3IgMjUwbXM7CiAgLXdlYmtpdC10cmFuc2l0aW9uOiBiYWNrZ3JvdW5kLWNvbG9yIDI1MG1zOwogIC1tb3otdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAyNTBtczsKICAtby10cmFuc2l0aW9uOiBiYWNrZ3JvdW5kLWNvbG9yIDI1MG1zOwogIAogIHotaW5kZXg6IDE7Cn0KCi5hcHAtYmFyLnNjcm9sbGVkIHsKICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMGRlZywgJWNvbG9yOlByaW1hcnkgT3ZlcmxheSAyJSwgJWNvbG9yOlByaW1hcnkgT3ZlcmxheSAyJSksICVjb2xvcjpCYWNrZ3JvdW5kJTsKICB0cmFuc2l0aW9uOiBiYWNrZ3JvdW5kIDI1MG1zOwogIC13ZWJraXQtdHJhbnNpdGlvbjogYmFja2dyb3VuZCAyNTBtczsKICAtbW96LXRyYW5zaXRpb246IGJhY2tncm91bmQgMjUwbXM7CiAgLW8tdHJhbnNpdGlvbjogYmFja2dyb3VuZCAyNTBtczsKfQoKLmFwcC1iYXIgLmFudmlsLWNvbXBvbmVudCB7CiAgbWFyZ2luLXRvcDogMDsKICBtYXJnaW4tYm90dG9tOiAwOwp9CgouYXBwLWJhciA+IC5zaWRlYmFyLXRvZ2dsZSB7IGRpc3BsYXk6YmxvY2s7IGZsb2F0OmxlZnQ7ICBtYXJnaW4tbGVmdDogLTYxcHg7IH0KLmFwcC1iYXIgPiAudG9wLWxlZnQtYnRuIHsgZmxvYXQ6IGxlZnQ7IG1hcmdpbi1sZWZ0OiAtNjBweDsgbWFyZ2luLXJpZ2h0OiAtNDBweDsgfQouYXBwLWJhciA+IC50aXRsZSB7IGZsb2F0OiBsZWZ0OyB9Ci5hcHAtYmFyID4gLnRpdGxlID4gLnBsYWNlaG9sZGVyIHsgb3V0bGluZTogMXB4IGRvdHRlZDsgcGFkZGluZy1sZWZ0OiAxNnB4OyBwYWRkaW5nLXJpZ2h0OiAxNnB4OyBtYXJnaW46IDhweCA4cHggMDsgZGlzcGxheTpub25lOyB9Ci5hcHAtYmFyID4gLmFwcC1iYXItbmF2IHsgZmxvYXQ6IHJpZ2h0OyBmb250LXdlaWdodDogbm9ybWFsOyB9Ci5hcHAtYmFyID4gLmFwcC1iYXItbmF2IC5wbGFjZWhvbGRlciB7IG1hcmdpbi10b3A6IDhweDsgcGFkZGluZzogMCA4cHg7IH0KLmFudmlsLWhpZ2hsaWdodCAuYXBwLWJhciA+IC5hcHAtYmFyLW5hdiAucGxhY2Vob2xkZXIgeyBvdXRsaW5lOiAxcHggZG90dGVkICNjY2M7IH0KLmFudmlsLWhpZ2hsaWdodCAuYXBwLWJhciA+IC50aXRsZSA+IC5wbGFjZWhvbGRlciB7IGRpc3BsYXk6YmxvY2s7IH0KCi5hcHAtYmFyIGEsIC5hcHAtYmFyIC5hbnZpbC1jb21wb25lbnQgewogIGRpc3BsYXk6IGJsb2NrOwogIGNvbG9yOiAlY29sb3I6T24gU3VyZmFjZSU7CiAgbGluZS1oZWlnaHQ6IDMwcHg7CiAgbWluLXdpZHRoOiAzMHB4OwogIG1pbi1oZWlnaHQ6IDMwcHg7CiAgbWFyZ2luOiA1cHggNHB4IDA7Cn0KCi5hcHAtYmFyIC50aXRsZSAuYW52aWwtY29tcG9uZW50IHsKICBtYXJnaW4tbGVmdDogMDsKfQoKLmFwcC1iYXIgaW5wdXQuYW52aWwtY29tcG9uZW50LCAuYXBwLWJhciAuYW52aWwtY29tcG9uZW50IGlucHV0IHsKICBsaW5lLWhlaWdodDogMzBweDsKICBjb2xvcjogd2hpdGU7Cn0KCi5hcHAtYmFyIHNlbGVjdC5mb3JtLWNvbnRyb2wgewogIGhlaWdodDogNDNweDsgLyogMzBweCBsaW5lIGhlaWdodCArIDEycHggcGFkZGluZyArIDFweCBib3JkZXIgKi8KfQoKLmFwcC1iYXIgLmFudmlsLWNvbXBvbmVudC1pY29uLXByZXNlbnQgLmFudmlsLWNvbXBvbmVudC1pY29uLCAuYXBwLWJhciAuc2lkZWJhci10b2dnbGUgLmZhIHsKICB3aWR0aDogMzBweDsKICB0ZXh0LWFsaWduOiBjZW50ZXI7Cn0KCi8qIERvbid0IHB1dCBzcGFjaW5nIG9uIHRoZSB0b3AtbGV2ZWwgY29udGFpbmVyIChlZyBGbG93UGFuZWwpICovCi5hcHAtYmFyLW5hdiA+IC5hbnZpbC1jb250YWluZXIgewogIG1hcmdpbjogMDsKICBwYWRkaW5nOiAwOwogIG1pbi1oZWlnaHQ6IDU2cHg7Cn0KCi5hbnZpbC1oaWdobGlnaHQgLmFwcC1iYXItbmF2ID4gLmFudmlsLWNvbnRhaW5lcjpub3QoLmhhcy1jb21wb25lbnRzKTpub3QoYSkgewogIG91dGxpbmU6IDFweCBkb3R0ZWQgI2ZmZjsKICBtYXJnaW4tdG9wOiA4cHg7CiAgbWluLWhlaWdodDogNDBweDsKICBwYWRkaW5nOiA1cHggOHB4Owp9CgouYW52aWwtaGlnaGxpZ2h0IC5hcHAtYmFyLW5hdiA+IC5hbnZpbC1jb250YWluZXI6bm90KC5oYXMtY29tcG9uZW50cyk6bm90KGEpOjphZnRlciB7ICAKICBjb250ZW50OiAiRHJvcCBMaW5rcyBoZXJlIgp9CgovKiBSZWppZyBtYXJnaW4gdnMgcGFkZGluZyB0byBnaXZlIGxpbmtzIHRoZSBoYWxvICovCi5hcHAtYmFyIGEsIC5hcHAtYmFyIGEuYW52aWwtY29tcG9uZW50IHsKICBwYWRkaW5nOiA1cHg7CiAgbWFyZ2luOiA4cHggMCAwOwogIGJvcmRlci1yYWRpdXM6IDIwcHg7Cn0KCi5hcHAtYmFyIGEgLmxpbmstdGV4dCB7CiAgcGFkZGluZzogMCA0cHg7Cn0KLmFwcC1iYXIgYS5oYXMtdGV4dCAuYW52aWwtY29tcG9uZW50LWljb24ubGVmdCB7CiAgbWFyZ2luLXJpZ2h0OiA0cHg7Cn0KLmFwcC1iYXIgYS5oYXMtdGV4dCAuYW52aWwtY29tcG9uZW50LWljb24ucmlnaHQgewogIG1hcmdpbi1sZWZ0OiA0cHg7Cn0KCgovKiBDb21wb25lbnQ6IERpYWxvZyAoYWxlcnQpLCBOb3RpZmljYXRpb24gKi8KLm1vZGFsLWNvbnRlbnQsIGJvZHk+ZGl2W2RhdGEtbm90aWZ5PSJjb250YWluZXIiXSB7CiAgYm9yZGVyLXJhZGl1czogMjhweDsKICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMGRlZywgJWNvbG9yOlByaW1hcnkgT3ZlcmxheSAzJSwgJWNvbG9yOlByaW1hcnkgT3ZlcmxheSAzJSksICVjb2xvcjpCYWNrZ3JvdW5kJTsKICBib3gtc2hhZG93OiBub25lOwogIGJvcmRlcjogbm9uZTsKfQoKLm1vZGFsLWhlYWRlciB7CiAgcGFkZGluZzogMjRweCAyNHB4IDBweDsKICBmb250LXNpemU6IDI0cHg7CiAgbGluZS1oZWlnaHQ6IDMycHg7CiAgYm9yZGVyOiAwOwogIGNvbG9yOiAlY29sb3I6T24gU3VyZmFjZSU7Cn0KCi5tb2RhbC1ib2R5IHsKICBwYWRkaW5nOiAyNHB4OwogIGZvbnQtc2l6ZTogMTZweDsKICBjb2xvcjogJWNvbG9yOk9uIFN1cmZhY2UgVmFyaWFudCU7Cn0KCi5tb2RhbC1mb290ZXIgewogIHBhZGRpbmc6IDBweCA4cHggMTRweCAyNHB4OwogIGJvcmRlcjogMDsKfQoKLm1vZGFsLWZvb3RlciAuYnRuLCAubW9kYWwtZm9vdGVyIC5idG46Zm9jdXMsIC5tb2RhbC1mb290ZXIgLmJ0bjphY3RpdmUgewogIGJveC1zaGFkb3c6IG5vbmU7CiAgdG9wOiAwOwp9CgovKiBOb3RpZmljYXRpb25zICovCmJvZHk+ZGl2W2RhdGEtbm90aWZ5PSJjb250YWluZXIiXSB7CiAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDBkZWcsICVjb2xvcjpQcmltYXJ5IE92ZXJsYXkgMyUsICVjb2xvcjpQcmltYXJ5IE92ZXJsYXkgMyUpLCAlY29sb3I6QmFja2dyb3VuZCU7CiAgYm9yZGVyOiBub25lOwogIHBhZGRpbmc6IDI0cHg7CiAgLyogMjRkcCAqLyBib3gtc2hhZG93OiAwIDlweCA0NnB4IDhweCByZ2JhKDAsIDAsIDAsIDAuMTQpLCAwIDExcHggMTVweCAtN3B4IHJnYmEoMCwgMCwgMCwgMC4xMiksIDAgMjRweCAzOHB4IDNweCByZ2JhKDAsIDAsIDAsIDAuMik7Cn0KCmJvZHk+ZGl2W2RhdGEtbm90aWZ5PSJjb250YWluZXIiXT5zcGFuW2RhdGEtbm90aWZ5PSJ0aXRsZSJdIHsKICBkaXNwbGF5OiBibG9jazsKICBmb250LXNpemU6IDE4cHg7CiAgZm9udC13ZWlnaHQ6IDUwMDsKICBjb2xvcjogJWNvbG9yOk9uIFN1cmZhY2UlOwp9Cgpib2R5PmRpdltkYXRhLW5vdGlmeT0iY29udGFpbmVyIl0+c3BhbltkYXRhLW5vdGlmeT0ibWVzc2FnZSJdIHsKICBkaXNwbGF5OiBibG9jazsKICBwYWRkaW5nOiAyMHB4IDAgMDsKICBmb250LXNpemU6IDE2cHg7CiAgY29sb3I6ICVjb2xvcjpPbiBTdXJmYWNlIFZhcmlhbnQlOyAgCn0KCmJvZHk+ZGl2W2RhdGEtbm90aWZ5PSJjb250YWluZXIiXS5hbGVydC1zdWNjZXNzewogIGJhY2tncm91bmQtY29sb3I6ICNkNGVkZGE7Cn0KCmJvZHk+ZGl2W2RhdGEtbm90aWZ5PSJjb250YWluZXIiXS5hbGVydC1zdWNjZXNzPnNwYW5bZGF0YS1ub3RpZnk9InRpdGxlIl17CiAgY29sb3I6ICMxNTU3MjQ7Cn0KCmJvZHk+ZGl2W2RhdGEtbm90aWZ5PSJjb250YWluZXIiXS5hbGVydC1kYW5nZXJ7CiAgYmFja2dyb3VuZC1jb2xvcjogI2Y4ZDdkYTsKfQoKYm9keT5kaXZbZGF0YS1ub3RpZnk9ImNvbnRhaW5lciJdLmFsZXJ0LWRhbmdlcj5zcGFuW2RhdGEtbm90aWZ5PSJ0aXRsZSJdewogIGNvbG9yOiAjNzIxYzI0Owp9Cgpib2R5PmRpdltkYXRhLW5vdGlmeT0iY29udGFpbmVyIl0uYWxlcnQtd2FybmluZ3sKICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmM2NkOwp9Cgpib2R5PmRpdltkYXRhLW5vdGlmeT0iY29udGFpbmVyIl0uYWxlcnQtd2FybmluZz5zcGFuW2RhdGEtbm90aWZ5PSJ0aXRsZSJdewogIGNvbG9yOiAjODU2NDA0Owp9CgpidXR0b24uY2xvc2UgPiBzcGFuLCBidXR0b24uY2xvc2UgewogIGNvbG9yOiVjb2xvcjpPbiBCYWNrZ3JvdW5kJTsKICB0ZXh0LXNoYWRvdzogMCAxcHggMCAlY29sb3I6QmFja2dyb3VuZCU7Cn0KCi8qIENvbXBvbmVudDogQnV0dG9uICovCgouYnRuLCAuYnRuLWRlZmF1bHQsIC5maWxlLWxvYWRlcj5sYWJlbCB7CiAgYm9yZGVyLXJhZGl1czogMTAwcHg7CiAgZm9udC1zaXplOiAxNHB4OwogIGZvbnQtd2VpZ2h0OiA1MDA7CiAgcGFkZGluZzogMTBweCAyNHB4OwogIG1pbi1oZWlnaHQ6IDQwcHg7CiAgbGV0dGVyLXNwYWNpbmc6IDAuMXB4OwoKICBib3JkZXI6IDA7CiAgYmFja2dyb3VuZC1pbWFnZTogbm9uZTsKICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsKICBjb2xvcjogJWNvbG9yOlByaW1hcnklOwogIHRleHQtc2hhZG93OiBub25lOwogIGJveC1zaGFkb3c6IG5vbmU7CiAgLXdlYmtpdC1ib3gtc2hhZG93OiBub25lOwogIAogIHBvc2l0aW9uOiByZWxhdGl2ZTsKfQoKLmJ0bjpob3ZlciwuZmlsZS1sb2FkZXI+bGFiZWw6aG92ZXIgewogIGJhY2tncm91bmQtY29sb3I6ICVjb2xvcjpMaWdodCBPdmVybGF5IDElOwogIGJhY2tncm91bmQtaW1hZ2U6IG5vbmU7CiAgb3V0bGluZTogbm9uZTsKICBjb2xvcjogJWNvbG9yOlByaW1hcnklOwp9CgouYnRuOmFjdGl2ZSwgLmJ0bjpmb2N1cywgLmJ0bjphY3RpdmU6Zm9jdXMsIC5maWxlLWxvYWRlcj5sYWJlbDphY3RpdmUsIC5maWxlLWxvYWRlcj5sYWJlbDpmb2N1cywgLmZpbGUtbG9hZGVyPmxhYmVsOmFjdGl2ZTpmb2N1cyB7CiAgYmFja2dyb3VuZC1jb2xvcjogJWNvbG9yOkxpZ2h0IE92ZXJsYXkgMiU7CiAgYmFja2dyb3VuZC1pbWFnZTogbm9uZTsKICBvdXRsaW5lOiBub25lOwogIGJveC1zaGFkb3c6IG5vbmU7CiAgY29sb3I6ICVjb2xvcjpQcmltYXJ5JTsKfQoKCi5hbnZpbC1yb2xlLW91dGxpbmVkLWJ1dHRvbiA+IC5idG4sIC5hbnZpbC1yb2xlLW91dGxpbmVkLWJ1dHRvbi5maWxlLWxvYWRlcj5sYWJlbCB7CiAgY29sb3I6ICVjb2xvcjpQcmltYXJ5JTsKICBib3JkZXI6IHNvbGlkIDFweCAlY29sb3I6T3V0bGluZSU7Cn0KCi5hbnZpbC1yb2xlLW91dGxpbmVkLWJ1dHRvbiA+IC5idG46aG92ZXIsIC5hbnZpbC1yb2xlLW91dGxpbmVkLWJ1dHRvbi5maWxlLWxvYWRlcj5sYWJlbDpob3ZlciB7CiAgYmFja2dyb3VuZC1jb2xvcjogJWNvbG9yOkxpZ2h0IE92ZXJsYXkgMSU7Cn0KCi5hbnZpbC1yb2xlLW91dGxpbmVkLWJ1dHRvbiA+IC5idG46Zm9jdXMsIC5hbnZpbC1yb2xlLW91dGxpbmVkLWJ1dHRvbiA+IC5idG46YWN0aXZlLCAKLmFudmlsLXJvbGUtb3V0bGluZWQtYnV0dG9uLmZpbGUtbG9hZGVyPmxhYmVsOmZvY3VzLCAuYW52aWwtcm9sZS1vdXRsaW5lZC1idXR0b24uZmlsZS1sb2FkZXI+bGFiZWw6YWN0aXZlewogIGJhY2tncm91bmQtY29sb3I6ICVjb2xvcjpMaWdodCBPdmVybGF5IDIlOwogIGNvbG9yOiAlY29sb3I6UHJpbWFyeSU7Cn0KCi5hbnZpbC1yb2xlLWZpbGxlZC1idXR0b24gPiAuYnRuLCAuYnRuLXByaW1hcnksIC5hbnZpbC1yb2xlLWZpbGxlZC1idXR0b24uZmlsZS1sb2FkZXI+bGFiZWwgewogIGJhY2tncm91bmQtY29sb3I6ICVjb2xvcjpQcmltYXJ5JTsKICBjb2xvcjogJWNvbG9yOk9uIFByaW1hcnklOyAKfQoKLmFudmlsLXJvbGUtZmlsbGVkLWJ1dHRvbiA+IC5idG46aG92ZXIsIC5idG4tcHJpbWFyeTpob3ZlciwgLmFudmlsLXJvbGUtZmlsbGVkLWJ1dHRvbi5maWxlLWxvYWRlcj5sYWJlbDpob3ZlciB7CiAgYm94LXNoYWRvdzogMCAxcHggMnB4IHJnYmEoMCwgMCwgMCwgMC4zKSwgMCAxcHggM3B4IDFweCByZ2JhKDAsIDAsIDAsIDAuMTUpOwogIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgwZGVnLCAlY29sb3I6TGlnaHQgT3ZlcmxheSAxJSwgJWNvbG9yOkxpZ2h0IE92ZXJsYXkgMSUpLCAlY29sb3I6UHJpbWFyeSU7CiAgY29sb3I6ICVjb2xvcjpPbiBQcmltYXJ5JTsgCn0KCi5hbnZpbC1yb2xlLWZpbGxlZC1idXR0b24gPiAuYnRuOmZvY3VzLCAuYnRuLXByaW1hcnk6Zm9jdXMsIC5hbnZpbC1yb2xlLWZpbGxlZC1idXR0b24gPiAuYnRuOmFjdGl2ZSwgCi5idG4tcHJpbWFyeTphY3RpdmUsIC5hbnZpbC1yb2xlLWZpbGxlZC1idXR0b24gPiAuYnRuOmFjdGl2ZTpob3ZlciwgLmJ0bi1wcmltYXJ5OmFjdGl2ZTpob3ZlciwKLmFudmlsLXJvbGUtZmlsbGVkLWJ1dHRvbi5maWxlLWxvYWRlcj5sYWJlbDpmb2N1cywgLmFudmlsLXJvbGUtZmlsbGVkLWJ1dHRvbi5maWxlLWxvYWRlcj5sYWJlbDphY3RpdmUsIAouYW52aWwtcm9sZS1maWxsZWQtYnV0dG9uLmZpbGUtbG9hZGVyPmxhYmVsOmFjdGl2ZTpmb2N1cwp7CiAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDBkZWcsICVjb2xvcjpMaWdodCBPdmVybGF5IDIlLCAlY29sb3I6TGlnaHQgT3ZlcmxheSAyJSksICVjb2xvcjpQcmltYXJ5JTsKICBjb2xvcjogJWNvbG9yOk9uIFByaW1hcnklOyAKfQoKLmFudmlsLXJvbGUtZWxldmF0ZWQtYnV0dG9uID4gLmJ0biwgLmFudmlsLXJvbGUtZWxldmF0ZWQtYnV0dG9uLmZpbGUtbG9hZGVyPmxhYmVsIHsKICBjb2xvcjogJWNvbG9yOlByaW1hcnklOwogIGJhY2tncm91bmQtY29sb3I6ICVjb2xvcjpTdXJmYWNlJTsKICBib3gtc2hhZG93OiAwIDFweCAycHggcmdiYSgwLCAwLCAwLCAwLjMpLCAwIDFweCAzcHggMXB4IHJnYmEoMCwgMCwgMCwgMC4xNSk7Cn0KCi5hbnZpbC1yb2xlLWVsZXZhdGVkLWJ1dHRvbiA+IC5idG46Zm9jdXMsIC5hbnZpbC1yb2xlLWVsZXZhdGVkLWJ1dHRvbiA+IC5idG46YWN0aXZlLCAKLmFudmlsLXJvbGUtZWxldmF0ZWQtYnV0dG9uID4gLmJ0bjphY3RpdmU6Zm9jdXMsIC5hbnZpbC1yb2xlLWVsZXZhdGVkLWJ1dHRvbi5maWxlLWxvYWRlcj5sYWJlbDpmb2N1cywgCi5hbnZpbC1yb2xlLWVsZXZhdGVkLWJ1dHRvbi5maWxlLWxvYWRlcj5sYWJlbDphY3RpdmUsIC5hbnZpbC1yb2xlLWVsZXZhdGVkLWJ1dHRvbi5maWxlLWxvYWRlcj5sYWJlbDphY3RpdmU6Zm9jdXMgewogIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgwZGVnLCAlY29sb3I6TGlnaHQgT3ZlcmxheSAyJSwgJWNvbG9yOkxpZ2h0IE92ZXJsYXkgMiUpLCAlY29sb3I6U3VyZmFjZSU7CiAgY29sb3I6ICVjb2xvcjpQcmltYXJ5JTsKICBib3gtc2hhZG93OiAwIDFweCAycHggcmdiYSgwLCAwLCAwLCAwLjMpLCAwIDFweCAzcHggMXB4IHJnYmEoMCwgMCwgMCwgMC4xNSk7Cn0KCi5hbnZpbC1yb2xlLWVsZXZhdGVkLWJ1dHRvbiA+IC5idG46aG92ZXIsIC5hbnZpbC1yb2xlLWVsZXZhdGVkLWJ1dHRvbi5maWxlLWxvYWRlcj5sYWJlbDpob3ZlciB7CiAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDBkZWcsICVjb2xvcjpMaWdodCBPdmVybGF5IDElLCAlY29sb3I6TGlnaHQgT3ZlcmxheSAxJSksICVjb2xvcjpTdXJmYWNlJTsKICBib3gtc2hhZG93OiAwIDFweCAycHggcmdiYSgwLCAwLCAwLCAwLjMpLCAwIDJweCA2cHggMnB4IHJnYmEoMCwgMCwgMCwgMC4xNSk7Cn0KCi5hbnZpbC1yb2xlLXRvbmFsLWJ1dHRvbiA+IC5idG4sIC5hbnZpbC1yb2xlLXRvbmFsLWJ1dHRvbi5maWxlLWxvYWRlcj5sYWJlbCB7CiAgY29sb3I6ICVjb2xvcjpPbiBTZWNvbmRhcnkgQ29udGFpbmVyJTsKICBiYWNrZ3JvdW5kLWNvbG9yOiAlY29sb3I6U2Vjb25kYXJ5IENvbnRhaW5lciU7Cn0KCi5hbnZpbC1yb2xlLXRvbmFsLWJ1dHRvbiA+IC5idG46Zm9jdXMsIC5hbnZpbC1yb2xlLXRvbmFsLWJ1dHRvbiA+IC5idG46YWN0aXZlLCAuYW52aWwtcm9sZS10b25hbC1idXR0b24gPiAuYnRuOmFjdGl2ZTpmb2N1cywgCi5hbnZpbC1yb2xlLXRvbmFsLWJ1dHRvbi5maWxlLWxvYWRlcj5sYWJlbDpmb2N1cywgLmFudmlsLXJvbGUtdG9uYWwtYnV0dG9uLmZpbGUtbG9hZGVyPmxhYmVsOmFjdGl2ZSwgLmFudmlsLXJvbGUtdG9uYWwtYnV0dG9uLmZpbGUtbG9hZGVyPmxhYmVsOmZvY3VzOmFjdGl2ZSB7CiAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDBkZWcsICVjb2xvcjpEYXJrIE92ZXJsYXkgMiUsICVjb2xvcjpEYXJrIE92ZXJsYXkgMiUpLCAlY29sb3I6U2Vjb25kYXJ5IENvbnRhaW5lciU7CiAgY29sb3I6ICVjb2xvcjpPbiBTZWNvbmRhcnkgQ29udGFpbmVyJTsKfQoKLmFudmlsLXJvbGUtdG9uYWwtYnV0dG9uID4gLmJ0bjpob3ZlciwgLmFudmlsLXJvbGUtdG9uYWwtYnV0dG9uLmZpbGUtbG9hZGVyPmxhYmVsOmhvdmVyewogIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgwZGVnLCAlY29sb3I6RGFyayBPdmVybGF5IDElLCAlY29sb3I6RGFyayBPdmVybGF5IDElKSwgJWNvbG9yOlNlY29uZGFyeSBDb250YWluZXIlOwogIGJveC1zaGFkb3c6IDAgMXB4IDJweCByZ2JhKDAsIDAsIDAsIDAuMyksIDAgMXB4IDNweCAxcHggcmdiYSgwLCAwLCAwLCAwLjE1KTsKICBjb2xvcjogJWNvbG9yOk9uIFNlY29uZGFyeSBDb250YWluZXIlOwp9CgouYnRuLWRlZmF1bHRbZGlzYWJsZWRdLCAuYnRuLWRlZmF1bHRbZGlzYWJsZWRdOmhvdmVyLCAuZmlsZS1sb2FkZXIuYW52aWwtZGlzYWJsZWQ+bGFiZWwsIC5maWxlLWxvYWRlci5hbnZpbC1kaXNhYmxlZD5sYWJlbDpob3ZlciB7CiAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7CiAgY29sb3I6ICVjb2xvcjpPbiBEaXNhYmxlZCU7Cn0KCi5hbnZpbC1yb2xlLXRvbmFsLWJ1dHRvbiA+IC5idG5bZGlzYWJsZWRdLCAuYW52aWwtcm9sZS10b25hbC1idXR0b24+IC5idG5bZGlzYWJsZWRdOmhvdmVyLCAKLmFudmlsLXJvbGUtdG9uYWwtYnV0dG9uLmZpbGUtbG9hZGVyLmFudmlsLWRpc2FibGVkPmxhYmVsLCAuYW52aWwtcm9sZS10b25hbC1idXR0b24uZmlsZS1sb2FkZXIuYW52aWwtZGlzYWJsZWQ+bGFiZWw6aG92ZXIsIAouYW52aWwtcm9sZS1maWxsZWQtYnV0dG9uID4gLmJ0bltkaXNhYmxlZF0sIC5hbnZpbC1yb2xlLWZpbGxlZC1idXR0b24gPiAuYnRuW2Rpc2FibGVkXTpob3ZlciwgCi5hbnZpbC1yb2xlLWZpbGxlZC1idXR0b24uZmlsZS1sb2FkZXIuYW52aWwtZGlzYWJsZWQ+bGFiZWwsIC5hbnZpbC1yb2xlLWZpbGxlZC1idXR0b24uZmlsZS1sb2FkZXIuYW52aWwtZGlzYWJsZWQ+bGFiZWw6aG92ZXIsIAouYW52aWwtcm9sZS1lbGV2YXRlZC1idXR0b24gPiAuYnRuW2Rpc2FibGVkXSwgLmFudmlsLXJvbGUtZWxldmF0ZWQtYnV0dG9uID4gLmJ0bltkaXNhYmxlZF06aG92ZXIsIAouYW52aWwtcm9sZS1lbGV2YXRlZC1idXR0b24uZmlsZS1sb2FkZXIuYW52aWwtZGlzYWJsZWQ+bGFiZWwsIC5hbnZpbC1yb2xlLWVsZXZhdGVkLWJ1dHRvbi5maWxlLWxvYWRlci5hbnZpbC1kaXNhYmxlZD5sYWJlbDpob3ZlciB7IAogIGJhY2tncm91bmQ6ICVjb2xvcjpEaXNhYmxlZCBDb250YWluZXIlOwogIGNvbG9yOiAlY29sb3I6T24gRGlzYWJsZWQlOwogIGJveC1zaGFkb3c6IG5vbmU7Cn0KCi5hbnZpbC1yb2xlLW91dGxpbmVkLWJ1dHRvbiA+IC5idG5bZGlzYWJsZWRdLCAuYW52aWwtcm9sZS1vdXRsaW5lZC1idXR0b24uZmlsZS1sb2FkZXIuYW52aWwtZGlzYWJsZWQ+bGFiZWwgewogIGJvcmRlci1jb2xvcjogJWNvbG9yOk9uIERpc2FibGVkJTsKICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsKfQoKCi8qIENvbXBvbmVudDogQ2FyZCAqLwoKLmFudmlsLXJvbGUtb3V0bGluZWQtY2FyZCB7CiAgb3ZlcmZsb3c6IGhpZGRlbjsKICBib3JkZXItcmFkaXVzOiAxMnB4OwogIGJhY2tncm91bmQtY29sb3I6ICVjb2xvcjpTdXJmYWNlJTsKICBib3JkZXI6IHNvbGlkIDFweCAlY29sb3I6T3V0bGluZSU7CiAgcGFkZGluZzogMTVweDsKfQoKLmFudmlsLXJvbGUtZWxldmF0ZWQtY2FyZCB7CiAgb3ZlcmZsb3c6IGhpZGRlbjsKICBib3JkZXItcmFkaXVzOiAxMnB4OwogIGJhY2tncm91bmQtY29sb3I6ICVjb2xvcjpTdXJmYWNlJTsKICAvKiAyZHAgKi8gIGJveC1zaGFkb3c6IDAgMXB4IDJweCByZ2JhKDAsIDAsIDAsIDAuMyksIDAgMnB4IDZweCAycHggcmdiYSgwLCAwLCAwLCAwLjE1KTsKICBwYWRkaW5nOiAxNXB4Owp9CgouYW52aWwtcm9sZS10b25hbC1jYXJkIHsKICBvdmVyZmxvdzogaGlkZGVuOwogIGJvcmRlci1yYWRpdXM6IDEycHg7CiAgYmFja2dyb3VuZC1jb2xvcjogJWNvbG9yOlN1cmZhY2UgVmFyaWFudCU7CiAgcGFkZGluZzogMTVweDsKfQoKCi8qIGZ1bGxfd2lkdGhfcm93IHNlY3Rpb25zIGdvIGZ1bGwgYmxlZWQgKi8KLmNvbHVtbi1wYW5lbC5hbnZpbC1yb2xlLWNhcmQgPiAuYW52aWwtcGFuZWwtc2VjdGlvbiA+IC5hbnZpbC1wYW5lbC1zZWN0aW9uLWNvbnRhaW5lci5mdWxsLXdpZHRoLXJvdyB7CiAgbWFyZ2luLWxlZnQ6IC0xMnB4OwogIG1hcmdpbi1yaWdodDogLTEycHg7CiAgd2lkdGg6IGluaXRpYWw7CiAgbWF4LXdpZHRoOiBpbml0aWFsOwp9CgovKiBJZiB0aGUgZmlyc3Qgcm93IG9mIGEgY2FyZCBpcyBhIGZ1bGxfd2lkdGhfcm93LCBpdCBnb2VzIHRvIHRoZSB0b3AgKi8KLmNvbHVtbi1wYW5lbC5hbnZpbC1yb2xlLWNhcmQgPiAuYW52aWwtcGFuZWwtc2VjdGlvbjpmaXJzdC1jaGlsZCA+IC5hbnZpbC1wYW5lbC1zZWN0aW9uLWNvbnRhaW5lci5mdWxsLXdpZHRoLXJvdyB7CiAgbWFyZ2luLXRvcDogLThweDsKfQouY29sdW1uLXBhbmVsLmFudmlsLXJvbGUtY2FyZCA+IC5hbnZpbC1wYW5lbC1zZWN0aW9uOmxhc3QtY2hpbGQgPiAuYW52aWwtcGFuZWwtc2VjdGlvbi1jb250YWluZXIuZnVsbC13aWR0aC1yb3cgewogIG1hcmdpbi1ib3R0b206IC04cHg7Cn0KCgoKLyogQ29tcG9uZW50OiBUZXh0Qm94ICsgVGV4dEFyZWEgKi8KCi8qdGhpcyBhZmZlY3RzIGRyb3Bkb3ducywgdGV4dCBib3hlcyBhbmQgdGV4dCBhcmVhczoqLwppbnB1dC5hbnZpbC1jb21wb25lbnQsIHRleHRhcmVhLmFudmlsLWNvbXBvbmVudCwgLmFudmlsLWNvbXBvbmVudCBzZWxlY3QsIC5hbnZpbC1kYXRlcGlja2VyIGlucHV0IHsKICBmb250LXNpemU6IDE2cHg7CiAgbGluZS1oZWlnaHQ6IDEuNTsKICBib3JkZXItcmFkaXVzOiA0cHggNHB4IDAgMDsKICBiYWNrZ3JvdW5kLWNvbG9yOiAlY29sb3I6U3VyZmFjZSBWYXJpYW50JTsKICBjb2xvcjogJWNvbG9yOk9uIFN1cmZhY2UgVmFyaWFudCU7CiAgYm94LXNoYWRvdzogbm9uZTsKfQoKLmFudmlsLWRyb3Bkb3duIHsKICBmb250LXNpemU6IDE2cHg7Cn0KCi5hbnZpbC1jb21wb25lbnQgc2VsZWN0IHsKICBmb250LXNpemU6IGluaGVyaXQ7Cn0KCmlucHV0LmFudmlsLWNvbXBvbmVudCwgLmFudmlsLWNvbXBvbmVudCBzZWxlY3QsIC5hbnZpbC1kYXRlcGlja2VyIGlucHV0LCB0ZXh0YXJlYS5hbnZpbC1jb21wb25lbnQgewogIHBhZGRpbmc6IDhweCAxNnB4OwogIGJvcmRlcjogMDsKICBib3JkZXItYm90dG9tOiAxcHggc29saWQgJWNvbG9yOk91dGxpbmUlOwp9CgouYW52aWwtZHJvcGRvd24gc2VsZWN0LmZvcm0tY29udHJvbCB7CiAgCiAgLXdlYmtpdC1hcHBlYXJhbmNlOiBub25lOwogIC1tb3otYXBwZWFyYW5jZTogbm9uZTsKLyogICBwYWRkaW5nOiA4cHggMmVtIDRweCAwOyAqLwogIAogIC8qIGV3IGV3IGV3IC0gc2VsZWN0IGVsZW1lbnRzIGFyZSB3ZWlyZCBhbmQgZG9uJ3Qgb2JleSBsaW5lLWhlaWdodCwgc28gd2UganVzdAogICAgIHNldCB0aGUgaGVpZ2h0IGV4cGxpY2l0bHkuIFVnaC4gKi8KICBoZWlnaHQ6IGNhbGMoMS41ZW0gKyAxM3B4KTsgLyogOHB4ICsgNHB4IHBhZGRpbmcgKyAxcHggYm9yZGVyID0gMTNweCAqLwp9CgouYW52aWwtZHJvcGRvd24gewogIHBvc2l0aW9uOiByZWxhdGl2ZTsKfQovKiBTZWxlY3QgYXJyb3cgc3R5bGluZyAqLwouYW52aWwtZHJvcGRvd24gZm9ybTpiZWZvcmUgewogICAgY29udGVudDogIlwyNUJDIjsKICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTsKICAgIHJpZ2h0OiAwOwogICAgZm9udC1zaXplOiA4MCU7CiAgICBsaW5lLWhlaWdodDogY2FsYygxLjhlbSArIDhweCk7CiAgICBjb2xvcjogJWNvbG9yOk91dGxpbmUlOwogICAgcG9pbnRlci1ldmVudHM6bm9uZTsKICAgIHBhZGRpbmc6IDRweCA0cHg7Cn0KCi5hbnZpbC1jb21wb25lbnQgc2VsZWN0LCAuYW52aWwtZGF0ZXBpY2tlciBpbnB1dCB7IG1hcmdpbi1ib3R0b206IDRweDsgfQppbnB1dC5hbnZpbC1jb21wb25lbnQuYW52aWwtc3BhY2luZy1iZWxvdy1ub25lIHsgbWFyZ2luLWJvdHRvbTogNHB4OyB9CmlucHV0LmFudmlsLWNvbXBvbmVudC5hbnZpbC1zcGFjaW5nLWJlbG93LXNtYWxsIHsgbWFyZ2luLWJvdHRvbTogOHB4OyB9CmlucHV0LmFudmlsLWNvbXBvbmVudC5hbnZpbC1zcGFjaW5nLWJlbG93LW1lZGl1bSB7IG1hcmdpbi1ib3R0b206IDEycHg7IH0KaW5wdXQuYW52aWwtY29tcG9uZW50LmFudmlsLXNwYWNpbmctYmVsb3ctbGFyZ2UgeyBtYXJnaW4tYm90dG9tOiAyMHB4OyB9CgppbnB1dC5hbnZpbC1jb21wb25lbnQ6Oi13ZWJraXQtaW5wdXQtcGxhY2Vob2xkZXIsIHRleHRhcmVhLmFudmlsLWNvbXBvbmVudDo6LXdlYmtpdC1pbnB1dC1wbGFjZWhvbGRlciB7CiAgY29sb3I6ICVjb2xvcjpPbiBTdXJmYWNlJTsKfQppbnB1dC5hbnZpbC1jb21wb25lbnQ6Oi1tb3otcGxhY2Vob2xkZXIsIHRleHRhcmVhLmFudmlsLWNvbXBvbmVudDo6LW1vei1wbGFjZWhvbGRlciB7CiAgY29sb3I6ICVjb2xvcjpPbiBTdXJmYWNlJTsKfQppbnB1dC5hbnZpbC1jb21wb25lbnQ6OnBsYWNlaG9sZGVyLCB0ZXh0YXJlYS5hbnZpbC1jb21wb25lbnQ6OnBsYWNlaG9sZGVyICB7CiAgY29sb3I6ICVjb2xvcjpPbiBTdXJmYWNlJTsKfQoKLmFwcC1iYXIgaW5wdXQuYW52aWwtY29tcG9uZW50Ojotd2Via2l0LWlucHV0LXBsYWNlaG9sZGVyLCAuYXBwLWJhciB0ZXh0YXJlYS5hbnZpbC1jb21wb25lbnQ6Oi13ZWJraXQtaW5wdXQtcGxhY2Vob2xkZXIgewogIGNvbG9yOiAlY29sb3I6T24gU3VyZmFjZSU7Cn0KLmFwcC1iYXIgaW5wdXQuYW52aWwtY29tcG9uZW50OjotbW96LXBsYWNlaG9sZGVyLCAuYXBwLWJhciB0ZXh0YXJlYS5hbnZpbC1jb21wb25lbnQ6Oi1tb3otcGxhY2Vob2xkZXIgewogIGNvbG9yOiAlY29sb3I6T24gU3VyZmFjZSU7Cn0KLmFwcC1iYXIgaW5wdXQuYW52aWwtY29tcG9uZW50OjpwbGFjZWhvbGRlciwgLmFwcC1iYXIgdGV4dGFyZWEuYW52aWwtY29tcG9uZW50OjpwbGFjZWhvbGRlciAgewogIGNvbG9yOiAlY29sb3I6T24gU3VyZmFjZSU7Cn0KCmlucHV0LmFudmlsLWNvbXBvbmVudDpob3ZlciwgaW5wdXQuYW52aWwtY29tcG9uZW50OmZvY3VzLCB0ZXh0YXJlYS5hbnZpbC1jb21wb25lbnQ6aG92ZXIsIHRleHRhcmVhLmFudmlsLWNvbXBvbmVudDpmb2N1cywgCi5hbnZpbC1jb21wb25lbnQgc2VsZWN0OmhvdmVyLCAuYW52aWwtY29tcG9uZW50IHNlbGVjdDpmb2N1cywgLmFudmlsLWRhdGVwaWNrZXIgaW5wdXQ6aG92ZXIsIC5hbnZpbC1kYXRlcGlja2VyIGlucHV0OmZvY3VzIHsKICBib3JkZXItYm90dG9tOiAycHggc29saWQgJWNvbG9yOlByaW1hcnklOwogIHBhZGRpbmctYm90dG9tOiA3cHg7CiAgYm94LXNoYWRvdzogbm9uZTsKfQoKCmlucHV0LmFudmlsLWNvbXBvbmVudFtkaXNhYmxlZF0sIC5hbnZpbC1jb21wb25lbnQgc2VsZWN0W2Rpc2FibGVkXSwgLmFudmlsLWRhdGVwaWNrZXIgaW5wdXRbZGlzYWJsZWRdLCB0ZXh0YXJlYS5hbnZpbC1jb21wb25lbnRbZGlzYWJsZWRdLCAKdGV4dGFyZWEuYW52aWwtY29tcG9uZW50LmFudmlsLXJvbGUtaW5wdXQtZXJyb3JbZGlzYWJsZWRdLCBpbnB1dC5hbnZpbC1jb21wb25lbnQuYW52aWwtcm9sZS1pbnB1dC1lcnJvcltkaXNhYmxlZF0sIAouYW52aWwtY29tcG9uZW50LmFudmlsLXJvbGUtaW5wdXQtZXJyb3Igc2VsZWN0W2Rpc2FibGVkXSwgLmFudmlsLWRhdGVwaWNrZXIuYW52aWwtcm9sZS1pbnB1dC1lcnJvciBpbnB1dFtkaXNhYmxlZF0gewogIGJhY2tncm91bmQtY29sb3I6ICVjb2xvcjpEYXJrIE92ZXJsYXkgMSU7CiAgY29sb3I6ICVjb2xvcjpPbiBEaXNhYmxlZCU7CiAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICVjb2xvcjpPbiBEaXNhYmxlZCU7CiAgcGFkZGluZy1ib3R0b206IDhweDsKfQoKLmFudmlsLWNvbXBvbmVudCBzZWxlY3Q6aG92ZXIsIC5hbnZpbC1jb21wb25lbnQgc2VsZWN0OmZvY3VzIHsKICBwYWRkaW5nLWJvdHRvbTogM3B4Owp9CgovKiBPdXRsaW5lZCByb2xlIGZvciB0ZXh0IGFyZWFzLCB0ZXh0IGJveGVzLCBkcm9wIGRvd25zIGFuZCBkYXRlIHBpY2tlcnMgKi8KdGV4dGFyZWEuYW52aWwtY29tcG9uZW50LmFudmlsLXJvbGUtb3V0bGluZWQsIGlucHV0LmFudmlsLWNvbXBvbmVudC5hbnZpbC1yb2xlLW91dGxpbmVkLCAKLmFudmlsLWNvbXBvbmVudC5hbnZpbC1yb2xlLW91dGxpbmVkIHNlbGVjdCwgLmFudmlsLWRhdGVwaWNrZXIuYW52aWwtcm9sZS1vdXRsaW5lZCBpbnB1dCB7CiAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7CiAgYm9yZGVyOiAxcHggc29saWQgJWNvbG9yOk91dGxpbmUlOwogIGJvcmRlci1yYWRpdXM6IDRweDsKICBjb2xvcjogJWNvbG9yOk9uIFN1cmZhY2UlOwp9Cgp0ZXh0YXJlYS5hbnZpbC1jb21wb25lbnQuYW52aWwtcm9sZS1vdXRsaW5lZDpob3ZlciwgdGV4dGFyZWEuYW52aWwtY29tcG9uZW50LmFudmlsLXJvbGUtb3V0bGluZWQ6Zm9jdXMsIAppbnB1dC5hbnZpbC1jb21wb25lbnQuYW52aWwtcm9sZS1vdXRsaW5lZDpob3ZlciwgaW5wdXQuYW52aWwtY29tcG9uZW50LmFudmlsLXJvbGUtb3V0bGluZWQ6Zm9jdXMsCi5hbnZpbC1jb21wb25lbnQuYW52aWwtcm9sZS1vdXRsaW5lZCBzZWxlY3Q6aG92ZXIsIC5hbnZpbC1jb21wb25lbnQuYW52aWwtcm9sZS1vdXRsaW5lZCBzZWxlY3Q6Zm9jdXMsCi5hbnZpbC1kYXRlcGlja2VyLmFudmlsLXJvbGUtb3V0bGluZWQgaW5wdXQ6aG92ZXIsIC5hbnZpbC1kYXRlcGlja2VyLmFudmlsLXJvbGUtb3V0bGluZWQgaW5wdXQ6Zm9jdXN7CiAgYm9yZGVyOiAycHggc29saWQgJWNvbG9yOlByaW1hcnklOwogIHBhZGRpbmc6IDdweCAxNXB4Owp9Cgp0ZXh0YXJlYS5hbnZpbC1jb21wb25lbnQuYW52aWwtcm9sZS1vdXRsaW5lZC1lcnJvcjpob3ZlciwgdGV4dGFyZWEuYW52aWwtY29tcG9uZW50LmFudmlsLXJvbGUtb3V0bGluZWQtZXJyb3I6Zm9jdXMsIAppbnB1dC5hbnZpbC1jb21wb25lbnQuYW52aWwtcm9sZS1vdXRsaW5lZC1lcnJvcjpob3ZlciwgaW5wdXQuYW52aWwtY29tcG9uZW50LmFudmlsLXJvbGUtb3V0bGluZWQtZXJyb3I6Zm9jdXMsCi5hbnZpbC1jb21wb25lbnQuYW52aWwtcm9sZS1vdXRsaW5lZC1lcnJvciBzZWxlY3Q6aG92ZXIsIC5hbnZpbC1jb21wb25lbnQuYW52aWwtcm9sZS1vdXRsaW5lZC1lcnJvciBzZWxlY3Q6Zm9jdXMsCi5hbnZpbC1kYXRlcGlja2VyLmFudmlsLXJvbGUtb3V0bGluZWQtZXJyb3IgaW5wdXQ6aG92ZXIsIC5hbnZpbC1kYXRlcGlja2VyLmFudmlsLXJvbGUtb3V0bGluZWQtZXJyb3IgaW5wdXQ6Zm9jdXN7CiAgYm9yZGVyOiAycHggc29saWQgJWNvbG9yOkVycm9yJTsKICBwYWRkaW5nLWJvdHRvbTogNnB4Owp9Cgp0ZXh0YXJlYS5hbnZpbC1jb21wb25lbnQuYW52aWwtcm9sZS1vdXRsaW5lZFtkaXNhYmxlZF0sIGlucHV0LmFudmlsLWNvbXBvbmVudC5hbnZpbC1yb2xlLW91dGxpbmVkW2Rpc2FibGVkXSwgCi5hbnZpbC1jb21wb25lbnQuYW52aWwtcm9sZS1vdXRsaW5lZCBzZWxlY3RbZGlzYWJsZWRdLCAuYW52aWwtZGF0ZXBpY2tlci5hbnZpbC1yb2xlLW91dGxpbmVkIGlucHV0W2Rpc2FibGVkXSwgCnRleHRhcmVhLmFudmlsLWNvbXBvbmVudC5hbnZpbC1yb2xlLW91dGxpbmVkLWVycm9yW2Rpc2FibGVkXSwgaW5wdXQuYW52aWwtY29tcG9uZW50LmFudmlsLXJvbGUtb3V0bGluZWQtZXJyb3JbZGlzYWJsZWRdLCAKLmFudmlsLWNvbXBvbmVudC5hbnZpbC1yb2xlLW91dGxpbmVkLWVycm9yIHNlbGVjdFtkaXNhYmxlZF0sIC5hbnZpbC1kYXRlcGlja2VyLmFudmlsLXJvbGUtb3V0bGluZWQtZXJyb3IgaW5wdXRbZGlzYWJsZWRdIHsKICBib3JkZXI6IDFweCBzb2xpZCAlY29sb3I6T24gRGlzYWJsZWQlOwogIGNvbG9yOiAlY29sb3I6T24gRGlzYWJsZWQlOwogIHBhZGRpbmctYm90dG9tOiA4cHg7Cn0KCi5kYXRlcmFuZ2VwaWNrZXIgdGQuYWN0aXZlIHsKICBiYWNrZ3JvdW5kOiAlY29sb3I6UHJpbWFyeSU7Cn0KCi5kYXRlcmFuZ2VwaWNrZXIgdGQuYXZhaWxhYmxlOmhvdmVyIHsKICBiYWNrZ3JvdW5kOiAlY29sb3I6RGFyayBPdmVybGF5IDIlOwp9CgouZGF0ZXJhbmdlcGlja2VyIHRkLmFjdGl2ZTpob3ZlciB7CiAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDBkZWcsICVjb2xvcjpMaWdodCBPdmVybGF5IDElLCAlY29sb3I6TGlnaHQgT3ZlcmxheSAxJSksICVjb2xvcjpQcmltYXJ5JTsKfQoKLmRhdGVyYW5nZXBpY2tlciB0ZC5vZmYgewogIGNvbG9yOiAlY29sb3I6T24gRGlzYWJsZWQlOwp9Cgp0ZXh0YXJlYS5hbnZpbC1jb21wb25lbnQuYW52aWwtcm9sZS1vdXRsaW5lZC1lcnJvciwgaW5wdXQuYW52aWwtY29tcG9uZW50LmFudmlsLXJvbGUtb3V0bGluZWQtZXJyb3IsIAouYW52aWwtY29tcG9uZW50LmFudmlsLXJvbGUtb3V0bGluZWQtZXJyb3Igc2VsZWN0LCAuYW52aWwtZGF0ZXBpY2tlci5hbnZpbC1yb2xlLW91dGxpbmVkLWVycm9yIGlucHV0IHsKICBjb2xvcjogJWNvbG9yOkVycm9yJTsKICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsKICBib3JkZXI6IDFweCBzb2xpZCAlY29sb3I6RXJyb3IlOzsKICBib3JkZXItcmFkaXVzOiA0cHg7Cn0KCnRleHRhcmVhLmFudmlsLWNvbXBvbmVudC5hbnZpbC1yb2xlLWlucHV0LWVycm9yLCBpbnB1dC5hbnZpbC1jb21wb25lbnQuYW52aWwtcm9sZS1pbnB1dC1lcnJvciwgCi5hbnZpbC1jb21wb25lbnQuYW52aWwtcm9sZS1pbnB1dC1lcnJvciBzZWxlY3QsIC5hbnZpbC1kYXRlcGlja2VyLmFudmlsLXJvbGUtaW5wdXQtZXJyb3IgaW5wdXQgewogIGNvbG9yOiAlY29sb3I6RXJyb3IlOwogIGJvcmRlci1jb2xvcjogJWNvbG9yOkVycm9yJTsgCn0KCi8qVE9ETzogZmlndXJlIG91dCB3aGF0IHRoaXMgaXMgdXNlZCBmb3IqLwovKiAuZGF0ZXJhbmdlcGlja2VyIC5idG4tc3VjY2VzcyB7CiAgY29sb3I6ICVjb2xvcjpQcmltYXJ5IDUwMCU7Cn0gKi8KCi8qIENvbXBvbmVudDogQ2hlY2tCb3gsIFJhZGlvQnV0dG9uICovCi5jaGVja2JveCBpbnB1dCwgLnJhZGlvIGlucHV0IHsKICAtd2Via2l0LWFwcGVhcmFuY2U6IG5vbmU7CiAgYXBwZWFyYW5jZTogbm9uZTsKICB3aWR0aDogMTVweDsKICBoZWlnaHQ6IDE1cHg7CiAgYm9yZGVyLXJhZGl1czogMXB4OwogIGJhY2tncm91bmQtY29sb3I6ICVjb2xvcjpTdXJmYWNlIFZhcmlhbnQlOyAKLyogICBjb2xvcjogJWNvbG9yOk9uIFN1cmZhY2UgVmFyaWFudCU7ICovCn0KCi5yYWRpbyBpbnB1dCB7CiAgYm9yZGVyLXJhZGl1cyA6IDUwJTsKfQoKLmNoZWNrYm94IGlucHV0OmhvdmVyLCAucmFkaW8gaW5wdXQ6aG92ZXIgewogIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgwZGVnLCAlY29sb3I6TGlnaHQgT3ZlcmxheSAxJSwgJWNvbG9yOkxpZ2h0IE92ZXJsYXkgMSUpLCAlY29sb3I6U3VyZmFjZSBWYXJpYW50JTsKfQoKLmNoZWNrYm94IGlucHV0OmZvY3VzLCAucmFkaW8gaW5wdXQ6Zm9jdXMgewogIG91dGxpbmU6IDA7Cn0KCi5yYWRpbyBpbnB1dDpmb2N1cyB7CiAgYm9yZGVyLXJhZGl1czogMTBweDsKfQoKLmNoZWNrYm94IGlucHV0W3R5cGU9ImNoZWNrYm94Il1bZGlzYWJsZWRdOmhvdmVyLCAucmFkaW8gaW5wdXRbdHlwZT0icmFkaW8iXVtkaXNhYmxlZF06aG92ZXIsIAouY2hlY2tib3ggaW5wdXRbdHlwZT0iY2hlY2tib3giXVtkaXNhYmxlZF0sIC5yYWRpbyBpbnB1dFt0eXBlPSJyYWRpbyJdW2Rpc2FibGVkXSB7CiAgYmFja2dyb3VuZDogJWNvbG9yOkRpc2FibGVkIENvbnRhaW5lciU7IAp9CgppbnB1dFtkaXNhYmxlZF0gfiBzcGFuIHsKICBjdXJzb3I6IG5vdC1hbGxvd2VkOwogIGNvbG9yOiAlY29sb3I6T24gRGlzYWJsZWQlOwp9CgouY2hlY2tib3ggaW5wdXQsIC5yYWRpbyBpbnB1dCB7CiAgZGlzcGxheTogZmxleDsKICBhbGlnbi1pdGVtczogY2VudGVyOwogIGp1c3RpZnktY29udGVudDogY2VudGVyOwp9CgouY2hlY2tib3ggaW5wdXQ6Y2hlY2tlZCwgLnJhZGlvIGlucHV0OmNoZWNrZWQgewogIGJhY2tncm91bmQtY29sb3I6ICVjb2xvcjpQcmltYXJ5IENvbnRhaW5lciU7CiAgY29sb3I6ICVjb2xvcjpPbiBQcmltYXJ5IENvbnRhaW5lciU7Cn0KCi5jaGVja2JveCBpbnB1dDpjaGVja2VkOmJlZm9yZSB7CiAgZm9udC1mYW1pbHk6ICJGb250QXdlc29tZSI7CiAgY29udGVudDogIlxmMDBjIjsKICBmb250LXNpemU6IDEwcHg7Cn0KCi5jaGVja2JveCBpbnB1dDppbmRldGVybWluYXRlOmJlZm9yZSB7CiAgZm9udC1mYW1pbHk6ICJGb250QXdlc29tZSI7CiAgY29udGVudDogIlxmMDY4IjsKICBmb250LXNpemU6IDEwcHg7Cn0gIAoKLnJhZGlvIGlucHV0OmNoZWNrZWQ6YmVmb3JlIHsKICBmb250LWZhbWlseTogIkZvbnRBd2Vzb21lIjsKICBjb250ZW50OiAiXGYxMTEiOwogIGZvbnQtc2l6ZTogOHB4Owp9CgouY2hlY2tib3gsIC5yYWRpbyB7CiAgZm9udC1zaXplOiAxNnB4Owp9CgovKiBEYXRhIEdyaWRzICovCi5hbnZpbC1yb2xlLXRvbmFsLWRhdGEtZ3JpZC5hbnZpbC1kYXRhLWdyaWQgPiAuZGF0YS1ncmlkLWNoaWxkLXBhbmVsPmRpdi5hdXRvLWdyaWQtaGVhZGVyIHsKICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMGRlZywgJWNvbG9yOlByaW1hcnkgT3ZlcmxheSAyJSwgJWNvbG9yOlByaW1hcnkgT3ZlcmxheSAyJSksICVjb2xvcjpCYWNrZ3JvdW5kJTsKICBib3JkZXItYm90dG9tOiAxcHggc29saWQgJWNvbG9yOlN1cmZhY2UgVmFyaWFudCU7CiAgYm9yZGVyLXJhZGl1czogMjRweCAyNHB4IDAgMDsKfQoKLmFudmlsLXJvbGUtdG9uYWwtZGF0YS1ncmlkLmFudmlsLWRhdGEtZ3JpZCA+IC5kYXRhLWdyaWQtY2hpbGQtcGFuZWw+ZGl2LmF1dG8tZ3JpZC1oZWFkZXIgZGl2LmRhdGEtcm93LWNvbCA+IGRpdiB7CiAgcGFkZGluZzogMTJweDsKICB0ZXh0LWFsaWduOiBjZW50ZXIgIWltcG9ydGFudDsKfQoKLmFudmlsLXJvbGUtdG9uYWwtZGF0YS1ncmlkLmFudmlsLWRhdGEtZ3JpZCB7CiAgYm9yZGVyLXJhZGl1czogMjRweDsKICBib3JkZXI6IDFweCBzb2xpZCAlY29sb3I6U3VyZmFjZSBWYXJpYW50JTsKfQoKLmFudmlsLXJvbGUtdG9uYWwtZGF0YS1ncmlkLmFudmlsLWRhdGEtZ3JpZCAuZGF0YS1ncmlkLWNoaWxkLXBhbmVsIGRpdi5kYXRhLXJvdy1jb2wgewogIGJvcmRlci1sZWZ0OiAxcHggc29saWQgJWNvbG9yOlN1cmZhY2UgVmFyaWFudCU7CiAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICVjb2xvcjpTdXJmYWNlIFZhcmlhbnQlOwp9CgouYW52aWwtcm9sZS10b25hbC1kYXRhLWdyaWQuYW52aWwtZGF0YS1ncmlkIC5kYXRhLWdyaWQtY2hpbGQtcGFuZWwgZGl2LmRhdGEtcm93LWNvbDpmaXJzdC1jaGlsZCB7CiAgYm9yZGVyLWxlZnQ6IDA7Cn0KCi5hbnZpbC1yb2xlLXRvbmFsLWRhdGEtZ3JpZC5hbnZpbC1kYXRhLWdyaWQgPiAuZGF0YS1ncmlkLWNoaWxkLXBhbmVsPmRpdi5hdXRvLWdyaWQtaGVhZGVyIGRpdi5kYXRhLXJvdy1jb2wgewogIGJvcmRlci10b3A6IDA7CiAgYm9yZGVyLWJvdHRvbTogMDsKICBib3JkZXItcmlnaHQ6IDA7Cn0KCgovKlBsb3RzKi8KCmRpdi5wbG90LWNvbnRhaW5lci5wbG90bHkgc3ZnLm1haW4tc3ZnIHsKICBib3JkZXI6IDFweCBzb2xpZCAlY29sb3I6U3VyZmFjZSBWYXJpYW50JTsKICBib3JkZXItcmFkaXVzOiAxMnB4Owp9CgoucGxvdC1jb250YWluZXIucGxvdGx5IC5tYWluLXN2ZyAucGFyY29vcmRzIC55LWF4aXMgLmF4aXMgLnRpY2sgPiB0ZXh0IHsKICB0ZXh0LXNoYWRvdzogbm9uZSAhaW1wb3J0YW50Owp9CgoucGxvdC1jb250YWluZXIucGxvdGx5IC5tYWluLXN2ZyAucGFyY29vcmRzIC55LWF4aXMgLmF4aXMgPiBwYXRoLmRvbWFpbiB7CiAgc3Ryb2tlOiAlY29sb3I6T3V0bGluZSU7Cn0KCi5hbnZpbC1zcGlubmVyIHsKICAgIC0tYW52aWwtc3Bpbm5lci1iZzogJWNvbG9yOlN1cmZhY2UgVmFyaWFudCU7Cn0K, id: OBSMYWER6BUHP5F52GDDACAI6SDV7COF, name: theme.css}
+  parameters:
+    color_scheme:
+      colors:
+      - {color: '#D0BCFF', name: Primary}
+      - {color: '#4F378B', name: Primary Container}
+      - {color: '#371E73', name: On Primary}
+      - {color: '#EADDFF', name: On Primary Container}
+      - {color: '#CCC2DC', name: Secondary}
+      - {color: '#4A4458', name: Secondary Container}
+      - {color: '#332D41', name: On Secondary}
+      - {color: '#E8DEF8', name: On Secondary Container}
+      - {color: '#EFB8C8', name: Tertiary}
+      - {color: '#633B48', name: Tertiary Container}
+      - {color: '#492532', name: On Tertiary}
+      - {color: '#FFD8E4', name: On Tertiary Container}
+      - {color: '#F2B8B5', name: Error}
+      - {color: '#1C1B1F', name: Background}
+      - {color: '#1C1B1F', name: Surface}
+      - {color: '#E6E1E5', name: On Background}
+      - {color: '#E6E1E5', name: On Surface}
+      - {color: '#49454F', name: Surface Variant}
+      - {color: '#CAC4D0', name: On Surface Variant}
+      - {color: '#938F99', name: Outline}
+      - {color: 'rgba(230, 225, 229, 0.38)', name: On Disabled}
+      - {color: 'rgba(230, 225, 229, 0.12)', name: Disabled Container}
+      - {color: 'rgba(232, 222, 248, 0.08)', name: Light Overlay 1}
+      - {color: 'rgba(232, 222, 248, 0.12)', name: Light Overlay 2}
+      - {color: 'rgba(232, 222, 248, 0.08)', name: Dark Overlay 1}
+      - {color: 'rgba(232, 222, 248, 0.12)', name: Dark Overlay 2}
+      - {color: 'rgba(208, 188, 255, 0.05)', name: Primary Overlay 1}
+      - {color: 'rgba(208, 188, 255, 0.08)', name: Primary Overlay 2}
+      - {color: 'rgba(208, 188, 255, 0.11)', name: Primary Overlay 3}
+      preset_groups:
+      - name: Colour Scheme
+        options:
+        - colors:
+          - {color: '#6750A4', name: Primary}
+          - {color: '#EADDFF', name: Primary Container}
+          - {color: '#FFFFFF', name: On Primary}
+          - {color: '#21005E', name: On Primary Container}
+          - {color: '#625B71', name: Secondary}
+          - {color: '#E8DEF8', name: Secondary Container}
+          - {color: '#FFFFFF', name: On Secondary}
+          - {color: '#1E192B', name: On Secondary Container}
+          - {color: '#7D5260', name: Tertiary}
+          - {color: '#FFD8E4', name: Tertiary Container}
+          - {color: '#FFFFFF', name: On Tertiary}
+          - {color: '#370B1E', name: On Tertiary Container}
+          - {color: '#B3261E', name: Error}
+          - {color: '#FFFBFE', name: Background}
+          - {color: '#FFFBFE', name: Surface}
+          - {color: '#1C1B1F', name: On Background}
+          - {color: '#1C1B1F', name: On Surface}
+          - {color: '#E7E0EC', name: Surface Variant}
+          - {color: '#49454E', name: On Surface Variant}
+          - {color: '#79747E', name: Outline}
+          - {color: 'rgba(28, 27, 31, 0.38)', name: On Disabled}
+          - {color: 'rgba(28, 27, 31, 0.12)', name: Disabled Container}
+          - {color: 'rgba(255, 255, 255, 0.08)', name: Light Overlay 1}
+          - {color: 'rgba(255, 255, 255, 0.12)', name: Light Overlay 2}
+          - {color: 'rgba(30, 25, 43, 0.08)', name: Dark Overlay 1}
+          - {color: 'rgba(30, 25, 43, 0.12)', name: Dark Overlay 2}
+          - {color: 'rgba(103, 80, 164, 0.05)', name: Primary Overlay 1}
+          - {color: 'rgba(103, 80, 164, 0.08)', name: Primary Overlay 2}
+          - {color: 'rgba(103, 80, 164, 0.11)', name: Primary Overlay 3}
+          name: Material Light
+        - colors:
+          - {color: '#D0BCFF', name: Primary}
+          - {color: '#4F378B', name: Primary Container}
+          - {color: '#371E73', name: On Primary}
+          - {color: '#EADDFF', name: On Primary Container}
+          - {color: '#CCC2DC', name: Secondary}
+          - {color: '#4A4458', name: Secondary Container}
+          - {color: '#332D41', name: On Secondary}
+          - {color: '#E8DEF8', name: On Secondary Container}
+          - {color: '#EFB8C8', name: Tertiary}
+          - {color: '#633B48', name: Tertiary Container}
+          - {color: '#492532', name: On Tertiary}
+          - {color: '#FFD8E4', name: On Tertiary Container}
+          - {color: '#F2B8B5', name: Error}
+          - {color: '#1C1B1F', name: Background}
+          - {color: '#1C1B1F', name: Surface}
+          - {color: '#E6E1E5', name: On Background}
+          - {color: '#E6E1E5', name: On Surface}
+          - {color: '#49454F', name: Surface Variant}
+          - {color: '#CAC4D0', name: On Surface Variant}
+          - {color: '#938F99', name: Outline}
+          - {color: 'rgba(230, 225, 229, 0.38)', name: On Disabled}
+          - {color: 'rgba(230, 225, 229, 0.12)', name: Disabled Container}
+          - {color: 'rgba(232, 222, 248, 0.08)', name: Light Overlay 1}
+          - {color: 'rgba(232, 222, 248, 0.12)', name: Light Overlay 2}
+          - {color: 'rgba(232, 222, 248, 0.08)', name: Dark Overlay 1}
+          - {color: 'rgba(232, 222, 248, 0.12)', name: Dark Overlay 2}
+          - {color: 'rgba(208, 188, 255, 0.05)', name: Primary Overlay 1}
+          - {color: 'rgba(208, 188, 255, 0.08)', name: Primary Overlay 2}
+          - {color: 'rgba(208, 188, 255, 0.11)', name: Primary Overlay 3}
+          name: Material Dark
+        - colors:
+          - {color: '#1EB980', name: Primary}
+          - {color: '#005235', name: Primary Container}
+          - {color: '#003824', name: On Primary}
+          - {color: '#73FBBC', name: On Primary Container}
+          - {color: '#B4CCBC', name: Secondary}
+          - {color: '#364B3F', name: Secondary Container}
+          - {color: '#20352A', name: On Secondary}
+          - {color: '#D0E8D8', name: On Secondary Container}
+          - {color: '#A4CDDD', name: Tertiary}
+          - {color: '#234C5A', name: Tertiary Container}
+          - {color: '#063542', name: On Tertiary}
+          - {color: '#C0E9FA', name: On Tertiary Container}
+          - {color: '#D64D47', name: Error}
+          - {color: '#191C1A', name: Background}
+          - {color: '#191C1A', name: Surface}
+          - {color: '#E1E3DF', name: On Background}
+          - {color: '#E1E3DF', name: On Surface}
+          - {color: '#404943', name: Surface Variant}
+          - {color: '#C0C9C1', name: On Surface Variant}
+          - {color: '#8A938C', name: Outline}
+          - {color: 'rgba(208, 232, 216, 0.2)', name: Dark Overlay 1}
+          - {color: 'rgba(208, 232, 216, 0.5)', name: Dark Overlay 2}
+          - {color: 'rgba(208, 232, 216, 0.2)', name: Light Overlay 1}
+          - {color: 'rgba(208, 232, 216, 0.5)', name: Light Overlay 2}
+          - {color: 'rgba(133, 133, 139, 0.12)', name: Disabled Container}
+          - {color: '#85858B', name: On Disabled}
+          - {color: 'rgba(30, 185, 128, 0.05)', name: Primary Overlay 1}
+          - {color: 'rgba(30, 185, 128, 0.08)', name: Primary Overlay 2}
+          - {color: 'rgba(30, 185, 128, 0.11)', name: Primary Overlay 3}
+          name: Rally Dark
+        - colors:
+          - {color: '#006C48', name: Primary}
+          - {color: '#00A36C', name: Primary Container}
+          - {color: '#FFFFFF', name: On Primary}
+          - {color: '#002113', name: On Primary Container}
+          - {color: '#496455', name: Secondary}
+          - {color: '#CBEAD6', name: Secondary Container}
+          - {color: '#FFFFFF', name: On Secondary}
+          - {color: '#052014', name: On Secondary Container}
+          - {color: '#326576', name: Tertiary}
+          - {color: '#B8EAFF', name: Tertiary Container}
+          - {color: '#FFFFFF', name: On Tertiary}
+          - {color: '#001F28', name: On Tertiary Container}
+          - {color: '#D64D47', name: Error}
+          - {color: '#FBFDF8', name: Background}
+          - {color: '#FBFDF8', name: Surface}
+          - {color: '#191C1A', name: On Background}
+          - {color: '#191C1A', name: On Surface}
+          - {color: '#DCE5DD', name: Surface Variant}
+          - {color: '#404943', name: On Surface Variant}
+          - {color: '#707973', name: Outline}
+          - {color: 'rgba(5, 32, 20, 0.8)', name: Dark Overlay 1}
+          - {color: 'rgba(51, 51, 61, 0.12)', name: Dark Overlay 2}
+          - {color: 'rgba(255, 255, 255, 0.8)', name: Light Overlay 1}
+          - {color: 'rgba(255, 255, 255, 0.12)', name: Light Overlay 2}
+          - {color: 'rgba(25, 28, 26, 0.12)', name: Disabled Container}
+          - {color: 'rgba(25, 28, 26, 0.38)', name: On Disabled}
+          - {color: 'rgba(0, 108, 72, 0.05)', name: Primary Overlay 1}
+          - {color: 'rgba(0, 108, 72, 0.08)', name: Primary Overlay 2}
+          - {color: 'rgba(0, 108, 72, 0.11)', name: Primary Overlay 3}
+          name: Rally Light
+        - colors:
+          - {color: '#006874', name: Primary}
+          - {color: '#96F0FF', name: Primary Container}
+          - {color: '#FFFFFF', name: On Primary}
+          - {color: '#001F24', name: On Primary Container}
+          - {color: '#486367', name: Secondary}
+          - {color: '#CBE8ED', name: Secondary Container}
+          - {color: '#FFFFFF', name: On Secondary}
+          - {color: '#031F23', name: On Secondary Container}
+          - {color: '#515E80', name: Tertiary}
+          - {color: '#DAE2FF', name: Tertiary Container}
+          - {color: '#FFFFFF', name: On Tertiary}
+          - {color: '#0C1A39', name: On Tertiary Container}
+          - {color: '#BA1A1A', name: Error}
+          - {color: '#FAFDFD', name: Background}
+          - {color: '#FAFDFD', name: Surface}
+          - {color: '#191C1D', name: On Background}
+          - {color: '#191C1D', name: On Surface}
+          - {color: '#DBE4E6', name: Surface Variant}
+          - {color: '#3F484A', name: On Surface Variant}
+          - {color: '#6F797A', name: Outline}
+          - {color: 'rgba(25, 28, 29, 0.38)', name: On Disabled}
+          - {color: 'rgba(25, 28, 29, 0.12)', name: Disabled Container}
+          - {color: 'rgba(255, 255, 255, 0.08)', name: Light Overlay 1}
+          - {color: 'rgba(255, 255, 255, 0.12)', name: Light Overlay 2}
+          - {color: 'rgba(3, 31, 35, 0.08)', name: Dark Overlay 1}
+          - {color: 'rgba(3, 31, 35, 0.12)', name: Dark Overlay 2}
+          - {color: 'rgba(0, 104, 116, 0.05)', name: Primary Overlay 1}
+          - {color: 'rgba(0, 104, 116, 0.08)', name: Primary Overlay 2}
+          - {color: 'rgba(0, 104, 116, 0.11)', name: Primary Overlay 3}
+          name: Mykonos Light
+        - colors:
+          - {color: '#3CD9ED', name: Primary}
+          - {color: '#004F57', name: Primary Container}
+          - {color: '#00363D', name: On Primary}
+          - {color: '#96F0FF', name: On Primary Container}
+          - {color: '#AFCBD0', name: Secondary}
+          - {color: '#314B4F', name: Secondary Container}
+          - {color: '#1A3438', name: On Secondary}
+          - {color: '#CBE8ED', name: On Secondary Container}
+          - {color: '#B9C6ED', name: Tertiary}
+          - {color: '#394667', name: Tertiary Container}
+          - {color: '#23304F', name: On Tertiary}
+          - {color: '##DAE2FF', name: On Tertiary Container}
+          - {color: '#FFB4AB', name: Error}
+          - {color: '#191C1D', name: Background}
+          - {color: '#191C1D', name: Surface}
+          - {color: '#E1E3E3', name: On Background}
+          - {color: '#E1E3E3', name: On Surface}
+          - {color: '#3F484A', name: Surface Variant}
+          - {color: '#BFC8CA', name: On Surface Variant}
+          - {color: '#899294', name: Outline}
+          - {color: 'rgba(225, 227, 227, 0.38)', name: On Disabled}
+          - {color: 'rgba(225, 227, 227, 0.12)', name: Disabled Container}
+          - {color: 'rgba(203, 232, 237, 0.08)', name: Light Overlay 1}
+          - {color: 'rgba(203, 232, 237, 0.12)', name: Light Overlay 2}
+          - {color: 'rgba(203, 232, 237, 0.08)', name: Dark Overlay 1}
+          - {color: 'rgba(203, 232, 237, 0.12)', name: Dark Overlay 2}
+          - {color: 'rgba(60, 217, 237, 0.05)', name: Primary Overlay 1}
+          - {color: 'rgba(60, 217, 237, 0.08)', name: Primary Overlay 2}
+          - {color: 'rgba(60, 217, 237, 0.11)', name: Primary Overlay 3}
+          name: Mykonos Dark
+        - colors:
+          - {color: '#9A4523', name: Primary}
+          - {color: '#FFDBCF', name: Primary Container}
+          - {color: '#FFFFFF', name: On Primary}
+          - {color: '#380D00', name: On Primary Container}
+          - {color: '#77574C', name: Secondary}
+          - {color: '#FFDBCF', name: Secondary Container}
+          - {color: '#FFFFFF', name: On Secondary}
+          - {color: '#2C160D', name: On Secondary Container}
+          - {color: '#695E2F', name: Tertiary}
+          - {color: '#F2E2A7', name: Tertiary Container}
+          - {color: '#FFFFFF', name: On Tertiary}
+          - {color: '#221B00', name: On Tertiary Container}
+          - {color: '#BA1A1A', name: Error}
+          - {color: '#FFFBFF', name: Background}
+          - {color: '#FFFBFF', name: Surface}
+          - {color: '#201A18', name: On Background}
+          - {color: '#201A18', name: On Surface}
+          - {color: '#F5DED6', name: Surface Variant}
+          - {color: '#53433E', name: On Surface Variant}
+          - {color: '#85736D', name: Outline}
+          - {color: 'rgba(32, 26, 24, 0.38)', name: On Disabled}
+          - {color: 'rgba(32, 26, 24, 0.12)', name: Disabled Container}
+          - {color: 'rgba(255, 255, 255, 0.08)', name: Light Overlay 1}
+          - {color: 'rgba(255, 255, 255, 0.12)', name: Light Overlay 2}
+          - {color: 'rgba(44, 22, 13, 0.08)', name: Dark Overlay 1}
+          - {color: 'rgba(44, 22, 13, 0.12)', name: Dark Overlay 2}
+          - {color: 'rgba(154, 69, 35, 0.05)', name: Primary Overlay 1}
+          - {color: 'rgba(154, 69, 35, 0.08)', name: Primary Overlay 2}
+          - {color: 'rgba(154, 69, 35, 0.11)', name: Primary Overlay 3}
+          name: Manarola Light
+        - colors:
+          - {color: '#FFB59B', name: Primary}
+          - {color: '#7B2E0E', name: Primary Container}
+          - {color: '#5B1A00', name: On Primary}
+          - {color: '#FFDBCF', name: On Primary Container}
+          - {color: '#E7BDB0', name: Secondary}
+          - {color: '#5D4036', name: Secondary Container}
+          - {color: '#442A21', name: On Secondary}
+          - {color: '#FFDBCF', name: On Secondary Container}
+          - {color: '#D5C68E', name: Tertiary}
+          - {color: '#50461A', name: Tertiary Container}
+          - {color: '#393005', name: On Tertiary}
+          - {color: '#F2E2A7', name: On Tertiary Container}
+          - {color: '#FFB4AB', name: Error}
+          - {color: '#201A18', name: Background}
+          - {color: '#201A18', name: Surface}
+          - {color: '#EDE0DC', name: On Background}
+          - {color: '#EDE0DC', name: On Surface}
+          - {color: '#53433E', name: Surface Variant}
+          - {color: '#D8C2BB', name: On Surface Variant}
+          - {color: '#A08D86', name: Outline}
+          - {color: 'rgba(237, 224, 220, 0.38)', name: On Disabled}
+          - {color: 'rgba(237, 224, 220, 0.12)', name: Disabled Container}
+          - {color: 'rgba(255, 219, 207, 0.08)', name: Light Overlay 1}
+          - {color: 'rgba(255, 219, 207, 0.12)', name: Light Overlay 2}
+          - {color: 'rgba(255, 219, 207, 0.08)', name: Dark Overlay 1}
+          - {color: 'rgba(255, 219, 207, 0.12)', name: Dark Overlay 2}
+          - {color: 'rgba(255, 181, 155, 0.05)', name: Primary Overlay 1}
+          - {color: 'rgba(255, 181, 155, 0.08)', name: Primary Overlay 2}
+          - {color: 'rgba(255, 181, 155, 0.11)', name: Primary Overlay 3}
+          name: Manarola Dark
+    roles:
+    - components: [Label]
+      name: input-prompt
+    - components: [Link]
+      name: selected
+    - components: [ColumnPanel, LinearPanel, XYPanel, RepeatingPanel]
+      display_in_toolbox: true
+      name: outlined-card
+      title: Outlined Card
+    - components: [ColumnPanel, LinearPanel, XYPanel, RepeatingPanel]
+      display_in_toolbox: false
+      name: elevated-card
+      title: Elevated Card
+    - components: [ColumnPanel, LinearPanel, XYPanel, RepeatingPanel]
+      display_in_toolbox: false
+      name: tonal-card
+      title: Tonal Card
+    - components: [Button, FileLoader]
+      display_in_toolbox: true
+      name: outlined-button
+      title: Outlined Button
+    - components: [Button, FileLoader]
+      display_in_toolbox: false
+      name: filled-button
+      title: Filled Button
+    - components: [Button, FileLoader]
+      display_in_toolbox: false
+      name: elevated-button
+      title: Elevated Button
+    - components: [Button, FileLoader]
+      display_in_toolbox: false
+      name: tonal-button
+      title: Tonal Button
+    - components: [TextBox, TextArea, DatePicker, DropDown]
+      display_in_toolbox: true
+      name: outlined
+      title: Outlined TextBox
+    - components: [Label, Link]
+      name: display
+    - components: [Label, Link]
+      name: headline
+    - components: [Label, Link]
+      name: title
+    - components: [Label, Link]
+      name: body
+    - components: [DataGrid]
+      name: tonal-data-grid
+    - components: [TextBox, TextArea, DatePicker, DropDown]
+      name: outlined-error
+    - components: [TextBox, TextArea, DatePicker, DropDown]
+      name: input-error
+  templates:
+  - description: A page with an app bar and an optional sidebar.
+    form:
+      class_name: Form
+      code: "from ._anvil_designer import $NAME$Template\nfrom anvil import *\n\nclass $NAME$($NAME$Template):\n\n  def __init__(self, **properties):\n    # Set Form properties and Data Bindings.\n    self.init_components(**properties)\n\n    # Any code you write here will run before the form opens.\n    \n"
+      components:
+      - layout_properties: {slot: default}
+        name: content_panel
+        properties: {}
+        type: ColumnPanel
+      - layout_properties: {slot: nav-right}
+        name: navbar_links
+        properties: {}
+        type: FlowPanel
+      container:
+        properties: {html: '@theme:standard-page.html'}
+        type: HtmlTemplate
+      is_package: true
+    img: img/form-templates/material-design-3.png
+    name: Standard Page
